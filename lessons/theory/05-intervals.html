@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Intervals — Musicianship · Theory Core</title>
+    <meta
+      name="description"
+      content="What an interval is, how to measure it (number + quality), the semitone sizes, inversion, compound intervals, and consonance vs dissonance — shown on the staff, the keyboard, and the fretboard."
+    />
+    <link rel="stylesheet" href="../../assets/css/site.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap">
+        <p class="crumbs">
+          <a href="../../index.html">Musicianship</a>
+          <span class="sep">/</span>
+          <a href="../../index.html">Theory Core</a>
+          <span class="sep">/</span>
+          Intervals
+        </p>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <article class="lesson">
+        <div class="lesson-header">
+          <span class="track-tag">Theory Core · Lesson 5</span>
+          <h1>Intervals</h1>
+          <p class="lesson-prose">
+            An <strong>interval</strong> is the distance in pitch between two
+            notes. It is the first idea in this course that you can hear,
+            measure, and build with — every scale, chord, melody, and harmony
+            below is just intervals stacked and strung together. Get intervals
+            into your ears and your hands and most of the &ldquo;why&rdquo; of
+            music opens up.
+          </p>
+          <ul class="outcomes">
+            <li>Measure any interval as a <em>number</em> + a <em>quality</em>.</li>
+            <li>Know the exact size in half steps (semitones) of every interval.</li>
+            <li>Spell intervals correctly — and see why spelling is not optional.</li>
+            <li>Invert an interval and find compound intervals.</li>
+            <li>Tell consonance from dissonance, and know the one famous exception.</li>
+          </ul>
+        </div>
+
+        <aside class="prereqs">
+          <h4>Before this lesson</h4>
+          <ul>
+            <li>Lesson 1 — Pitch &amp; the chromatic system (the 12 notes, half and whole steps).</li>
+            <li>Lesson 2 — Notation I (the staff, treble &amp; bass clefs, accidentals).</li>
+          </ul>
+        </aside>
+
+        <div class="lesson-prose">
+          <h2>1. Melodic and harmonic intervals</h2>
+          <p>
+            The two notes of an interval can be played one after the other —
+            a <strong>melodic</strong> interval, the stuff of melodies — or at
+            the same time — a <strong>harmonic</strong> interval, the stuff of
+            chords. The <em>name</em> of the interval is identical either way;
+            only the presentation differs.
+          </p>
+        </div>
+
+        <figure class="score">
+          <script type="text/abc">
+X:1
+T:Melodic vs. harmonic — the same third
+M:4/4
+L:1/4
+K:C
+"melodic"C E z2 | "harmonic"[CE]4 |]
+          </script>
+          <figcaption>
+            C up to E, sounded in turn (melodic) and together (harmonic). Same
+            interval — a third — both times.
+          </figcaption>
+        </figure>
+
+        <div class="lesson-prose">
+          <h2>2. The number: counting the distance</h2>
+          <p>
+            Every interval has a <strong>number</strong> (its generic size).
+            You find it by counting <strong>letter names</strong> — equivalently
+            staff lines and spaces — <strong>inclusively</strong>: the bottom
+            note is <em>1</em>, and you count up to and including the top note.
+          </p>
+          <p>
+            From C up to E, count C&nbsp;(1) — D&nbsp;(2) — E&nbsp;(3): a
+            <strong>third</strong>. From C up to the next C, count all eight
+            letters C-D-E-F-G-A-B-C: an <strong>octave</strong> (an 8th).
+          </p>
+          <div class="callout why">
+            <span class="callout-label">Why inclusive counting?</span>
+            <p>
+              Because the number names the <em>span of letters covered</em>, not
+              the number of steps between them. Two adjacent letters (C up to D)
+              already cover two letter names, so they make a 2nd, not a 1st. The
+              same note repeated covers one letter — a 1st, called a
+              <strong>unison</strong>. This is also why, later, inversion sizes
+              add up to nine rather than eight: the shared note gets counted in
+              both halves.
+            </p>
+          </div>
+          <p>
+            The number ignores accidentals. <span class="note">C</span>,
+            <span class="note">C&sharp;</span>, and <span class="note">C&flat;</span>
+            all count as &ldquo;C&rdquo; when you find the number. So C-E,
+            C&sharp;-E, and C-E&flat; are <em>all</em> thirds — they just differ
+            in quality, which is the next idea.
+          </p>
+          <p>
+            Stacking each diatonic note of C major over a held C gives the
+            numbers 1 through 8 in one sweep:
+          </p>
+        </div>
+
+        <figure class="score">
+          <script type="text/abc">
+X:1
+T:Diatonic intervals above C (C major)
+M:4/4
+L:1/4
+K:C
+"P1"[CC] "M2"[CD] "M3"[CE] "P4"[CF] | "P5"[CG] "M6"[CA] "M7"[CB] "P8"[Cc] |]
+          </script>
+          <figcaption>
+            Unison, 2nd, 3rd, 4th, 5th, 6th, 7th, octave — the qualities
+            (P/M) are explained in section 3.
+          </figcaption>
+        </figure>
+
+        <div class="diagram"
+          data-keyboard='{"octaves":1,"startNote":"C","startOctave":4,"showLabels":true,"highlight":[{"note":"C4","label":"1"},{"note":"E4","label":"3"},{"note":"G4","label":"5"}]}'>
+        </div>
+        <p class="lesson-prose">
+          <small
+            >The same notes on the keyboard: C is the reference (scale degree 1),
+            E the third, G the fifth — the bones of a C-major chord.</small
+          >
+        </p>
+
+        <div class="lesson-prose">
+          <h2>3. The quality: how big, exactly</h2>
+          <p>
+            The number alone is generic — &ldquo;a third&rdquo; could be wider
+            or narrower by a half step. The <strong>quality</strong> makes it
+            specific. There are five quality labels:
+            <strong>Perfect&nbsp;(P)</strong>, <strong>Major&nbsp;(M)</strong>,
+            <strong>minor&nbsp;(m)</strong>,
+            <strong>Augmented&nbsp;(A)</strong>, and
+            <strong>diminished&nbsp;(d)</strong>.
+          </p>
+          <p>
+            Which qualities a number can take is fixed and absolute:
+          </p>
+          <table>
+            <thead>
+              <tr>
+                <th>These numbers are <em>Perfect</em></th>
+                <th>These numbers are <em>Major / minor</em></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Unison (1), 4th, 5th, Octave (8)</td>
+                <td>2nd, 3rd, 6th, 7th</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>
+            A 4th or 5th is <em>never</em> &ldquo;major&rdquo;; a 3rd or 6th is
+            <em>never</em> &ldquo;perfect.&rdquo; But <em>any</em> interval can
+            be pushed to Augmented (a half step wider) or diminished (a half
+            step narrower).
+          </p>
+          <p>Move a half step at a time and the quality slides along a ladder:</p>
+          <ul>
+            <li>
+              <strong>Imperfect numbers (2, 3, 6, 7):</strong>
+              diminished — minor — <strong>Major</strong> — Augmented
+            </li>
+            <li>
+              <strong>Perfect numbers (1, 4, 5, 8):</strong>
+              diminished — <strong>Perfect</strong> — Augmented (no
+              &ldquo;major/minor&rdquo; rung exists here)
+            </li>
+          </ul>
+          <div class="callout tip">
+            <span class="callout-label">Rule of thumb</span>
+            <p>
+              <strong>Augmented</strong> = one half step <em>wider</em> than
+              Perfect or Major. <strong>diminished</strong> = one half step
+              <em>narrower</em> than Perfect or minor. Note the asymmetry: from
+              Major, &ldquo;diminished&rdquo; is two half steps down (you pass
+              through minor first); from Perfect it is only one half step down.
+            </p>
+          </div>
+
+          <h3>Major third vs. minor third</h3>
+          <p>
+            The clearest place to hear quality is the third. C up to E is a
+            <strong>major third</strong> (bright); lower the top note a half step
+            to E&flat; and you get a <strong>minor third</strong> (darker). Same
+            number, different quality — and the whole major/minor colour of music
+            rides on this one half step.
+          </p>
+        </div>
+
+        <figure class="score">
+          <script type="text/abc">
+X:1
+T:Major third and minor third on C
+M:4/4
+L:1/2
+K:C
+"M3"[CE] "m3"[C_E] |]
+          </script>
+          <figcaption>C-E (major third, 4 half steps) and C-E&flat; (minor third, 3 half steps).</figcaption>
+        </figure>
+
+        <div class="both-instruments">
+          <div class="instrument">
+            <h4>On the piano</h4>
+            <div class="diagram"
+              data-keyboard='{"octaves":1,"startNote":"C","startOctave":4,"showLabels":true,"highlight":[{"note":"C4","label":"R"},{"note":"E4","label":"M3"},{"note":"Eb4","label":"m3"}]}'>
+            </div>
+            <p>
+              <small
+                >From C, the major third lands on E (white), the minor third on
+                E&flat; (the black key just below it) — you can <em>see</em> the
+                one-half-step difference.</small
+              >
+            </p>
+          </div>
+          <div class="instrument">
+            <h4>On the guitar</h4>
+            <div class="diagram"
+              data-fretboard='{"frets":[0,4],"open":[5],"dots":[{"string":5,"fret":3,"label":"R"},{"string":4,"fret":2,"label":"3"}]}'>
+            </div>
+            <p>
+              <small
+                >C on the A string (5th string, 3rd fret) up to E on the D string
+                (4th string, 2nd fret): a major third. Lower that E by one fret to
+                E&flat; (1st fret) and it becomes a minor third.</small
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="lesson-prose">
+          <h2>4. Exact sizes in half steps</h2>
+          <p>
+            Counting half steps (semitones) pins down every simple interval —
+            from unison up to an octave — with no ambiguity. Memorise this table;
+            it is the multiplication table of harmony.
+          </p>
+        </div>
+
+        <table class="interval-table">
+          <thead>
+            <tr>
+              <th>Interval</th>
+              <th>Short</th>
+              <th>Half steps</th>
+              <th>Also called</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Perfect unison</td><td>P1</td><td>0</td><td>unison</td></tr>
+            <tr><td>minor second</td><td>m2</td><td>1</td><td>half step / semitone</td></tr>
+            <tr><td>Major second</td><td>M2</td><td>2</td><td>whole step / tone</td></tr>
+            <tr><td>minor third</td><td>m3</td><td>3</td><td></td></tr>
+            <tr><td>Major third</td><td>M3</td><td>4</td><td></td></tr>
+            <tr><td>Perfect fourth</td><td>P4</td><td>5</td><td></td></tr>
+            <tr><td>Augmented 4th / diminished 5th</td><td>A4 / d5</td><td>6</td><td>tritone</td></tr>
+            <tr><td>Perfect fifth</td><td>P5</td><td>7</td><td></td></tr>
+            <tr><td>minor sixth</td><td>m6</td><td>8</td><td></td></tr>
+            <tr><td>Major sixth</td><td>M6</td><td>9</td><td></td></tr>
+            <tr><td>minor seventh</td><td>m7</td><td>10</td><td></td></tr>
+            <tr><td>Major seventh</td><td>M7</td><td>11</td><td></td></tr>
+            <tr><td>Perfect octave</td><td>P8</td><td>12</td><td>octave</td></tr>
+          </tbody>
+        </table>
+
+        <div class="lesson-prose">
+          <h2>5. Spelling matters: enharmonics and the tritone</h2>
+          <p>
+            Two intervals can be the <em>same number of half steps</em> — they
+            sound identical on a piano — yet be named differently, because they
+            span a different number of letters. These are
+            <strong>enharmonic</strong> equivalents. The classic case is the
+            <strong>tritone</strong> (6 half steps): C up to F&sharp; is an
+            <strong>Augmented fourth</strong> (C-D-E-F = four letters), while
+            C up to G&flat; is a <strong>diminished fifth</strong> (C-D-E-F-G =
+            five letters). Same sound, different spelling, different name.
+          </p>
+        </div>
+
+        <figure class="score">
+          <script type="text/abc">
+X:1
+T:The tritone, spelled two ways
+M:4/4
+L:1/2
+K:C
+"A4"[C^F] "d5"[C_G] |]
+          </script>
+          <figcaption>
+            C-F&sharp; (augmented 4th) and C-G&flat; (diminished 5th) — both 6
+            half steps, both the tritone, named by their letter span.
+          </figcaption>
+        </figure>
+
+        <div class="lesson-prose">
+          <div class="callout why">
+            <span class="callout-label">Why spelling is not optional</span>
+            <p>
+              The number is fixed by the letters <em>first</em>; only then does
+              the accidental set the quality. F&sharp; up to D&flat; is 7 half
+              steps, the size of a perfect fifth — but F and D are only six
+              letters apart, so it is a <strong>diminished sixth</strong>, not a
+              fifth. A real perfect fifth from F&sharp; must be spelled
+              F&sharp;-C&sharp;. Spelling carries the musical
+              <em>function</em>; the same sound can mean different things, and the
+              notation tells you which.
+            </p>
+          </div>
+        </div>
+
+        <div class="lesson-prose">
+          <h2>6. Inversion</h2>
+          <p>
+            <strong>Invert</strong> an interval by flipping its notes — move the
+            bottom note up an octave (or the top note down one) so they swap
+            roles. Two patterns make inversion easy:
+          </p>
+          <ul>
+            <li>
+              <strong>The Rule of 9:</strong> the number and its inversion always
+              add up to <strong>9</strong> (a 3rd inverts to a 6th, a 2nd to a
+              7th, a 4th to a 5th, a unison to an octave).
+            </li>
+            <li>
+              <strong>Quality flips in pairs:</strong> Major&nbsp;&harr;&nbsp;minor,
+              Augmented&nbsp;&harr;&nbsp;diminished, and Perfect stays Perfect.
+            </li>
+          </ul>
+          <p>
+            So a major third (C-E) inverts to a minor sixth (E-C). Check it: the
+            numbers 3 + 6 = 9, the quality Major &rarr; minor, and the half steps
+            4 + 8 = 12 (a full octave).
+          </p>
+        </div>
+
+        <figure class="score">
+          <script type="text/abc">
+X:1
+T:Inverting a major third
+M:4/4
+L:1/2
+K:C
+"M3"[CE] "m6"[Ec] |]
+          </script>
+          <figcaption>
+            C-E (major third) inverted becomes E-C (minor sixth). 3 + 6 = 9,
+            M &rarr; m, 4 + 8 = 12 half steps.
+          </figcaption>
+        </figure>
+
+        <table class="interval-table">
+          <thead>
+            <tr><th>Interval</th><th>Inverts to</th><th>Number check</th><th>Half-step check</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Perfect 5th</td><td>Perfect 4th</td><td>5 + 4 = 9</td><td>7 + 5 = 12</td></tr>
+            <tr><td>Major 3rd</td><td>minor 6th</td><td>3 + 6 = 9</td><td>4 + 8 = 12</td></tr>
+            <tr><td>minor 2nd</td><td>Major 7th</td><td>2 + 7 = 9</td><td>1 + 11 = 12</td></tr>
+            <tr><td>Augmented 4th</td><td>diminished 5th</td><td>4 + 5 = 9</td><td>6 + 6 = 12</td></tr>
+          </tbody>
+        </table>
+
+        <div class="lesson-prose">
+          <h2>7. Compound intervals</h2>
+          <p>
+            Intervals up to an octave are <strong>simple</strong>. Anything wider
+            is <strong>compound</strong> — a simple interval plus one or more
+            octaves. To name a compound interval, <strong>add 7</strong> to the
+            simple number (again, because the shared octave note is counted
+            twice). The quality carries straight over.
+          </p>
+          <table>
+            <thead>
+              <tr><th>Compound</th><th>=</th><th>Simple + octave</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>9th (e.g. M9)</td><td>=</td><td>2nd + octave (M2)</td></tr>
+              <tr><td>10th</td><td>=</td><td>3rd + octave</td></tr>
+              <tr><td>11th</td><td>=</td><td>4th + octave (P4)</td></tr>
+              <tr><td>13th</td><td>=</td><td>6th + octave</td></tr>
+            </tbody>
+          </table>
+          <p>
+            You will meet these constantly in chord names — a
+            &ldquo;C&nbsp;major&nbsp;9&rdquo; is a chord that reaches up a ninth.
+            (More in Lesson 21, Extended &amp; altered chords.)
+          </p>
+
+          <h2>8. Consonance and dissonance</h2>
+          <p>
+            Some intervals sound stable and at rest — <strong>consonant</strong>;
+            others sound tense and want to move — <strong>dissonant</strong>.
+            This drives almost all harmonic motion: dissonance creates the pull,
+            consonance the release.
+          </p>
+          <ul>
+            <li>
+              <strong>Perfect consonances:</strong> unison (P1), perfect fifth
+              (P5), octave (P8).
+            </li>
+            <li>
+              <strong>Imperfect consonances:</strong> major and minor thirds
+              (M3, m3), major and minor sixths (M6, m6).
+            </li>
+            <li>
+              <strong>Dissonances:</strong> the seconds (m2, M2), the sevenths
+              (m7, M7), the tritone (A4/d5), and all augmented and diminished
+              intervals.
+            </li>
+          </ul>
+          <div class="callout why">
+            <span class="callout-label">The perfect fourth — the famous exception</span>
+            <p>
+              The perfect fourth is the one interval the tradition can't agree
+              on. Acoustically it is a near-perfect consonance (a simple 4:3
+              frequency ratio). But in strict voice-leading and species
+              counterpoint it is treated as a <strong>dissonance</strong> when it
+              sits directly above the bass with nothing under it — the
+              species-counterpoint tradition codified by Fux, and inherited by
+              Haydn, Mozart and Beethoven, treated the bare fourth as something
+              that needs resolving. Put a note <em>below</em> the fourth and the
+              tension evaporates. So: consonant on its own, but dissonant against
+              the bass. You will return to exactly this in Lesson 22 (species
+              counterpoint).
+            </p>
+          </div>
+
+          <h2>9. The same interval, both instruments</h2>
+          <p>
+            Take the perfect fifth — the most stable interval after the octave,
+            and the backbone of the power chord. Here is C up to G (7 half steps)
+            on both instruments, and on the staff in the bass clef so you start
+            reading both clefs early.
+          </p>
+        </div>
+
+        <div class="both-instruments">
+          <div class="instrument">
+            <h4>On the piano</h4>
+            <div class="diagram"
+              data-keyboard='{"octaves":1,"startNote":"C","startOctave":4,"showLabels":true,"highlight":[{"note":"C4","label":"R"},{"note":"G4","label":"5"}]}'>
+            </div>
+          </div>
+          <div class="instrument">
+            <h4>On the guitar</h4>
+            <div class="diagram"
+              data-fretboard='{"frets":[0,5],"dots":[{"string":5,"fret":3,"label":"R"},{"string":4,"fret":5,"label":"5"}]}'>
+            </div>
+          </div>
+        </div>
+
+        <figure class="score">
+          <script type="text/abc">
+X:1
+T:A perfect fifth in the bass clef
+M:4/4
+L:1/2
+K:C clef=bass
+"P5"[C,G,] "P8"[C,C] |]
+          </script>
+          <figcaption>
+            C-G (perfect fifth) and C-C (octave) written in the bass clef — the
+            clef you will read for the left hand at the piano and the low strings
+            of the guitar.
+          </figcaption>
+        </figure>
+
+        <section class="exercise" aria-label="Exercises">
+          <h4>Exercises — tick them off as you do them</h4>
+          <label>
+            <input type="checkbox" class="check" data-lesson="05-intervals" data-ex="ex1" />
+            <span
+              >Name each diatonic interval above C from the section&nbsp;2 score
+              out loud (P1, M2, M3, P4, P5, M6, M7, P8) while playing them on
+              your instrument.</span
+            >
+          </label>
+          <label>
+            <input type="checkbox" class="check" data-lesson="05-intervals" data-ex="ex2" />
+            <span
+              >Identify these by number + quality and confirm the half steps:
+              C&rarr;E, E&rarr;G, C&rarr;G, F&rarr;B, D&rarr;C. (Answers: M3/4,
+              m3/3, P5/7, A4/6, m7/10.)</span
+            >
+          </label>
+          <label>
+            <input type="checkbox" class="check" data-lesson="05-intervals" data-ex="ex3" />
+            <span
+              >Invert each interval above using the Rule of 9 and the
+              quality-flip rule; check that the half steps add to 12.</span
+            >
+          </label>
+          <label>
+            <input type="checkbox" class="check" data-lesson="05-intervals" data-ex="ex4" />
+            <span
+              >Spell a perfect fifth above each of: G, A, E, B&flat;, F&sharp;.
+              Letters first, then the accidental. (Answers: D, E, B, F, C&sharp;.)</span
+            >
+          </label>
+          <label>
+            <input type="checkbox" class="check" data-lesson="05-intervals" data-ex="ex5" />
+            <span
+              >Ear training: open the teoria interval ear-trainer (below) and run
+              one set of melodic intervals up to a fifth. Note which two you
+              confuse most.</span
+            >
+          </label>
+
+          <div class="lesson-complete-row">
+            <label>
+              <input
+                type="checkbox"
+                class="check lesson-complete"
+                data-lesson="05-intervals"
+                data-lesson-complete
+              />
+              <span>Mark this lesson complete</span>
+            </label>
+          </div>
+        </section>
+
+        <div class="lesson-prose">
+          <h2>Keep going — verified resources</h2>
+          <p>
+            A short, hand-checked set for this exact topic. The video needs an
+            internet connection; everything else (and all the notation above)
+            works offline.
+          </p>
+        </div>
+
+        <div class="video-embed">
+          <iframe
+            src="https://www.youtube.com/embed/m9GlB8tanNE"
+            title="Explaining Musical Intervals As Clearly As Possible — Signals Music Studio"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <ul class="resources">
+          <li>
+            <span class="chip article">Article</span>
+            <a href="https://www.musictheory.net/lessons/30" target="_blank" rel="noopener"
+              >musictheory.net — Generic Intervals (Lesson 30)</a
+            >
+            <span>Measuring intervals by number on the staff.</span>
+          </li>
+          <li>
+            <span class="chip article">Article</span>
+            <a href="https://www.musictheory.net/lessons/31" target="_blank" rel="noopener"
+              >musictheory.net — Specific Intervals (Lesson 31)</a
+            >
+            <span>Quality: major, minor, perfect, augmented, diminished.</span>
+          </li>
+          <li>
+            <span class="chip article">Article</span>
+            <a
+              href="https://viva.pressbooks.pub/openmusictheory/chapter/intervals/"
+              target="_blank"
+              rel="noopener"
+              >Open Music Theory — Intervals</a
+            >
+            <span>A thorough, college-level chapter covering everything here and more.</span>
+          </li>
+          <li>
+            <span class="chip article">Article</span>
+            <a href="https://www.teoria.com/en/tutorials/intervals/" target="_blank" rel="noopener"
+              >teoria.com — Intervals tutorial</a
+            >
+            <span>Interactive walk-through with notation visuals.</span>
+          </li>
+          <li>
+            <span class="chip trainer">Trainer</span>
+            <a href="https://www.musictheory.net/exercises/interval" target="_blank" rel="noopener"
+              >musictheory.net — Interval Identification</a
+            >
+            <span>Name the interval between two notes on the staff. Drill this.</span>
+          </li>
+          <li>
+            <span class="chip trainer">Trainer</span>
+            <a href="https://www.teoria.com/en/exercises/ie.php" target="_blank" rel="noopener"
+              >teoria.com — Interval Ear Training</a
+            >
+            <span>Hear an interval and identify it — melodic and harmonic.</span>
+          </li>
+          <li>
+            <span class="chip video">Video</span>
+            <a href="https://www.youtube.com/watch?v=m9GlB8tanNE" target="_blank" rel="noopener"
+              >Signals Music Studio — Explaining Musical Intervals As Clearly As Possible</a
+            >
+            <span>A clear from-scratch explanation (embedded above).</span>
+          </li>
+        </ul>
+
+        <nav class="lesson-nav" aria-label="Lesson navigation">
+          <span class="nav-prev nav-disabled">← 04 · Score-reading conventions (coming soon)</span>
+          <a class="nav-hub" href="../../index.html">All lessons</a>
+          <span class="nav-next nav-disabled">06 · Major scale &amp; circle of fifths (coming soon) →</span>
+        </nav>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>
+          Musicianship — a framework-free, offline-friendly music-learning suite.
+          Notation rendered with the vendored abcjs library. Theory in this
+          lesson is cross-checked against Open Music Theory, musictheory.net, and
+          teoria.com.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Shared scripts, fixed load order (plain scripts, not modules) -->
+    <script src="../../assets/vendor/abcjs/abcjs-basic-min.js"></script>
+    <script src="../../assets/js/notation.js"></script>
+    <script src="../../assets/js/fretboard.js"></script>
+    <script src="../../assets/js/keyboard.js"></script>
+    <script src="../../assets/js/progress.js"></script>
+  </body>
+</html>

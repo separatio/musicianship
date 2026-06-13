@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Musicianship — theory-first music learning for guitar &amp; piano</title>
+    <meta
+      name="description"
+      content="A self-hosted, theory-first music-learning suite. Understand music itself, then apply it to guitar and piano."
+    />
+    <link rel="stylesheet" href="assets/css/site.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap">
+        <h1>Musicianship</h1>
+        <p class="tagline">
+          Understand music itself — theory-first, applied to guitar and piano.
+        </p>
+        <p class="intro">
+          This is a self-hosted study suite. Work through the Theory Core in
+          order, then carry each idea straight onto the fretboard or keyboard.
+          Keep it open on a phone or tablet on your music stand while you play:
+          tick exercises off as you go and your progress is saved on the device.
+        </p>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <section class="progress-summary" id="overall-progress" hidden>
+        <div class="progress-label">
+          <span>Overall progress</span>
+          <strong><span id="overall-pct">0%</span></strong>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" id="overall-fill"></div>
+        </div>
+      </section>
+
+      <section id="tracks" class="hub" aria-label="Course tracks">
+        <p class="hub-message">Loading curriculum…</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>
+          Musicianship — a framework-free, offline-friendly music-learning
+          suite. Notation rendered with the vendored abcjs library.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Shared scripts, fixed load order (plain scripts, not modules) -->
+    <script src="assets/vendor/abcjs/abcjs-basic-min.js"></script>
+    <script src="assets/js/notation.js"></script>
+    <script src="assets/js/fretboard.js"></script>
+    <script src="assets/js/keyboard.js"></script>
+    <script src="assets/js/progress.js"></script>
+    <script src="assets/js/hub.js"></script>
+  </body>
+</html>

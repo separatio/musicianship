@@ -1,0 +1,909 @@
+/* ==========================================================================
+   Musicianship — design system
+   Framework-free, no build step, no web fonts (works offline).
+   Dark by default; light variant via prefers-color-scheme.
+   ========================================================================== */
+
+:root {
+  /* Type — system stacks only, no downloads */
+  --font-sans:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
+  --font-serif:
+    "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia,
+    "Times New Roman", serif;
+  --font-mono:
+    ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas, monospace;
+
+  --text-xs: 0.78rem;
+  --text-sm: 0.88rem;
+  --text-base: 1rem;
+  --text-lg: 1.18rem;
+  --text-xl: 1.45rem;
+  --text-2xl: 1.9rem;
+  --text-3xl: 2.5rem;
+
+  /* Spacing scale */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-8: 3rem;
+  --space-10: 4rem;
+
+  --radius: 10px;
+  --radius-sm: 6px;
+  --measure: 70ch;
+
+  /* Color — dark (default) */
+  --bg: #14161b;
+  --bg-elev: #1c1f27;
+  --bg-card: #20242e;
+  --bg-sunken: #0f1115;
+  --border: #2c313d;
+  --border-strong: #3a4150;
+  --text: #e6e8ee;
+  --text-soft: #aab0be;
+  --text-muted: #767d8c;
+  --accent: #c9a35e;
+  --accent-soft: #e2c489;
+  --accent-bg: rgba(201, 163, 94, 0.12);
+  --link: #8db4e2;
+  --link-hover: #b3d0f2;
+  --why: #7fa7d6;
+  --why-bg: rgba(127, 167, 214, 0.1);
+  --tip: #88c0a0;
+  --tip-bg: rgba(136, 192, 160, 0.1);
+
+  /* Paper card for notation — kept light in both themes so black notation reads */
+  --paper: #faf8f3;
+  --paper-ink: #1c1c1c;
+  --paper-border: #d9d2c4;
+
+  /* Diagram parts */
+  --diagram-line: #6b7280;
+  --diagram-line-soft: #9aa1ad;
+  --diagram-dot: var(--accent);
+  --diagram-dot-ink: #1a1300;
+  --kb-white: #f4f1ea;
+  --kb-black: #20242e;
+  --kb-border: #555c6a;
+  --kb-hl: var(--accent);
+
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.4), 0 6px 24px rgba(0, 0, 0, 0.25);
+
+  color-scheme: dark;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #f5f3ee;
+    --bg-elev: #ffffff;
+    --bg-card: #ffffff;
+    --bg-sunken: #eae5db;
+    --border: #ddd6c8;
+    --border-strong: #c8bfac;
+    --text: #20242e;
+    --text-soft: #4b5160;
+    --text-muted: #7a8090;
+    --accent: #9a6f1f;
+    --accent-soft: #82601e;
+    --accent-bg: rgba(154, 111, 31, 0.1);
+    --link: #2a5d9c;
+    --link-hover: #1d4474;
+    --why: #2a5d9c;
+    --why-bg: rgba(42, 93, 156, 0.08);
+    --tip: #2c7a52;
+    --tip-bg: rgba(44, 122, 82, 0.08);
+
+    --diagram-line: #555c6a;
+    --diagram-line-soft: #8a8f9b;
+    --kb-white: #ffffff;
+    --kb-black: #2a2d36;
+    --kb-border: #9098a6;
+
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.08), 0 6px 20px rgba(0, 0, 0, 0.08);
+
+    color-scheme: light;
+  }
+}
+
+/* ---------- Reset / base ---------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-serif);
+  line-height: 1.2;
+  color: var(--text);
+  margin: 0 0 var(--space-3);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: var(--text-3xl);
+}
+h2 {
+  font-size: var(--text-2xl);
+}
+h3 {
+  font-size: var(--text-xl);
+}
+h4 {
+  font-size: var(--text-lg);
+}
+
+p {
+  margin: 0 0 var(--space-4);
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+
+code,
+kbd {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+  background: var(--bg-sunken);
+  padding: 0.1em 0.35em;
+  border-radius: var(--radius-sm);
+}
+
+.wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 var(--space-5);
+}
+
+/* ---------- Site header ---------- */
+
+.site-header {
+  background: linear-gradient(180deg, var(--bg-elev), var(--bg));
+  border-bottom: 1px solid var(--border);
+  padding: var(--space-8) 0 var(--space-6);
+}
+
+.site-header h1 {
+  margin: 0 0 var(--space-2);
+}
+
+.site-header .tagline {
+  color: var(--text-soft);
+  font-size: var(--text-lg);
+  margin: 0;
+  max-width: var(--measure);
+}
+
+.site-header .intro {
+  color: var(--text-soft);
+  max-width: var(--measure);
+  margin-top: var(--space-4);
+  font-size: var(--text-sm);
+}
+
+/* ---------- Overall progress summary ---------- */
+
+.progress-summary {
+  margin: var(--space-6) 0 var(--space-2);
+  padding: var(--space-4) var(--space-5);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.progress-summary .progress-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: var(--space-3);
+  margin-bottom: var(--space-3);
+  font-size: var(--text-sm);
+  color: var(--text-soft);
+}
+
+.progress-summary .progress-label strong {
+  color: var(--text);
+}
+
+/* ---------- Progress bar ---------- */
+
+.progress-bar {
+  height: 8px;
+  background: var(--bg-sunken);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, var(--accent), var(--accent-soft));
+  border-radius: 999px;
+  transition: width 0.35s ease;
+}
+
+/* ---------- Hub / track cards ---------- */
+
+.hub {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: var(--space-5);
+  margin: var(--space-6) 0 var(--space-10);
+}
+
+.hub .hub-message {
+  grid-column: 1 / -1;
+  padding: var(--space-6);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text-soft);
+}
+
+.track-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--space-5);
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+}
+
+.track-card h3 {
+  margin-bottom: var(--space-1);
+}
+
+.track-card .track-blurb {
+  color: var(--text-soft);
+  font-size: var(--text-sm);
+  margin-bottom: var(--space-4);
+}
+
+.track-card .track-progress {
+  margin-bottom: var(--space-4);
+}
+
+.track-card .track-progress-label {
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+  margin-bottom: var(--space-2);
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ---------- Lesson list ---------- */
+
+.lesson-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.lesson-link {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-3);
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-sm);
+  color: var(--text);
+  border: 1px solid transparent;
+}
+
+a.lesson-link:hover {
+  background: var(--accent-bg);
+  border-color: var(--border);
+  text-decoration: none;
+}
+
+.lesson-link .lesson-n {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+  min-width: 2.2em;
+}
+
+.lesson-link .lesson-title {
+  flex: 1;
+}
+
+.lesson-link .lesson-check {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.lesson-link.is-complete .lesson-title {
+  color: var(--text-soft);
+}
+
+.lesson-link.planned {
+  color: var(--text-muted);
+  cursor: default;
+}
+
+.lesson-link.planned:hover {
+  background: none;
+  border-color: transparent;
+  text-decoration: none;
+}
+
+.lesson-link .badge-planned {
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0 var(--space-2);
+}
+
+/* ---------- Lesson page ---------- */
+
+.lesson {
+  padding: var(--space-6) 0 var(--space-10);
+}
+
+.lesson-prose {
+  max-width: var(--measure);
+}
+
+.lesson-header {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: var(--space-4);
+  margin-bottom: var(--space-6);
+}
+
+.lesson-header .track-tag {
+  display: inline-block;
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  margin-bottom: var(--space-2);
+}
+
+.crumbs {
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+  margin-bottom: var(--space-4);
+}
+
+.crumbs a {
+  color: var(--text-soft);
+}
+
+.crumbs .sep {
+  margin: 0 var(--space-2);
+  color: var(--text-muted);
+}
+
+.prereqs {
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius-sm);
+  padding: var(--space-3) var(--space-4);
+  margin: var(--space-4) 0;
+  font-size: var(--text-sm);
+}
+
+.prereqs h4 {
+  font-family: var(--font-sans);
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  margin: 0 0 var(--space-2);
+}
+
+.prereqs ul {
+  margin: 0;
+  padding-left: var(--space-5);
+}
+
+/* ---------- Callouts ---------- */
+
+.callout {
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  padding: var(--space-4) var(--space-5);
+  margin: var(--space-5) 0;
+}
+
+.callout > :last-child {
+  margin-bottom: 0;
+}
+
+.callout .callout-label {
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  font-weight: 700;
+  display: block;
+  margin-bottom: var(--space-2);
+}
+
+.callout.why {
+  background: var(--why-bg);
+  border-left-color: var(--why);
+}
+.callout.why .callout-label {
+  color: var(--why);
+}
+
+.callout.tip {
+  background: var(--tip-bg);
+  border-left-color: var(--tip);
+}
+.callout.tip .callout-label {
+  color: var(--tip);
+}
+
+/* ---------- Both instruments grid ---------- */
+
+.both-instruments {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-5);
+  margin: var(--space-5) 0;
+}
+
+.both-instruments > * {
+  min-width: 0;
+}
+
+.both-instruments .instrument h4 {
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+  margin-bottom: var(--space-3);
+}
+
+@media (max-width: 720px) {
+  .both-instruments {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------- Score (notation) ---------- *
+   Light paper card in BOTH themes so abcjs's black notation always reads. */
+
+.score {
+  background: var(--paper);
+  color: var(--paper-ink);
+  border: 1px solid var(--paper-border);
+  border-radius: var(--radius);
+  padding: var(--space-4) var(--space-5);
+  margin: var(--space-5) 0;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.score .score-render {
+  width: 100%;
+}
+
+.score svg,
+.abcjs-container svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Force abcjs vector parts dark on the paper card regardless of inherited color */
+.score svg .abcjs-note,
+.score svg .abcjs-staff,
+.score svg .abcjs-bar,
+.score svg .abcjs-clef,
+.score svg .abcjs-key-signature,
+.score svg .abcjs-time-signature,
+.score svg path,
+.abcjs-container svg path {
+  fill: var(--paper-ink);
+  stroke: var(--paper-ink);
+}
+
+.score svg .abcjs-staff,
+.score svg text,
+.abcjs-container svg text {
+  fill: var(--paper-ink);
+}
+
+.score figcaption {
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+  margin-top: var(--space-3);
+  font-style: italic;
+}
+
+/* ---------- Diagrams (fretboard / keyboard SVG) ---------- */
+
+.diagram {
+  margin: var(--space-5) 0;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.diagram svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Fretboard SVG parts */
+.fretboard-svg .fb-string,
+.fretboard-svg .fb-fret {
+  stroke: var(--diagram-line);
+  stroke-width: 1.5;
+}
+
+.fretboard-svg .fb-nut {
+  stroke: var(--diagram-line-soft);
+  stroke-width: 4;
+}
+
+.fretboard-svg .fb-dot {
+  fill: var(--diagram-dot);
+  stroke: none;
+}
+
+.fretboard-svg .fb-dot-label {
+  fill: var(--diagram-dot-ink);
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 700;
+  text-anchor: middle;
+}
+
+.fretboard-svg .fb-open {
+  fill: none;
+  stroke: var(--diagram-line-soft);
+  stroke-width: 1.5;
+}
+
+.fretboard-svg .fb-muted {
+  stroke: var(--diagram-line-soft);
+  stroke-width: 1.5;
+}
+
+.fretboard-svg .fb-fretnum {
+  fill: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  text-anchor: middle;
+}
+
+/* Keyboard SVG parts */
+.keyboard-svg .kb-white {
+  fill: var(--kb-white);
+  stroke: var(--kb-border);
+  stroke-width: 1;
+}
+
+.keyboard-svg .kb-black {
+  fill: var(--kb-black);
+  stroke: var(--kb-border);
+  stroke-width: 1;
+}
+
+.keyboard-svg .kb-hl {
+  fill: var(--kb-hl);
+}
+
+.keyboard-svg .kb-label {
+  fill: var(--paper-ink);
+  font-family: var(--font-sans);
+  font-size: 10px;
+  font-weight: 600;
+  text-anchor: middle;
+}
+
+/* ---------- Tables ---------- */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: var(--space-5) 0;
+  font-size: var(--text-sm);
+}
+
+th,
+td {
+  text-align: left;
+  padding: var(--space-2) var(--space-3);
+  border-bottom: 1px solid var(--border);
+}
+
+th {
+  color: var(--text-soft);
+  font-weight: 600;
+  border-bottom-color: var(--border-strong);
+}
+
+.interval-table td:first-child {
+  font-weight: 600;
+}
+
+.interval-table tr:hover td {
+  background: var(--accent-bg);
+}
+
+/* ---------- Exercise ---------- */
+
+.exercise {
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--space-5);
+  margin: var(--space-5) 0;
+}
+
+.exercise h4 {
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+  margin-bottom: var(--space-3);
+}
+
+.exercise label,
+.exercise .exercise-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  padding: var(--space-2) 0;
+  cursor: pointer;
+}
+
+.check {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 1.2em;
+  height: 1.2em;
+  margin-top: 0.15em;
+  flex: none;
+  border: 2px solid var(--border-strong);
+  border-radius: 4px;
+  background: var(--bg-sunken);
+  cursor: pointer;
+  position: relative;
+}
+
+.check:checked {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.check:checked::after {
+  content: "";
+  position: absolute;
+  left: 0.32em;
+  top: 0.08em;
+  width: 0.3em;
+  height: 0.6em;
+  border: solid var(--diagram-dot-ink);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.check:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.lesson-complete-row {
+  margin-top: var(--space-5);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--border);
+}
+
+.lesson-complete-row label {
+  font-weight: 600;
+  color: var(--text);
+}
+
+/* ---------- Resources ---------- */
+
+.resources {
+  list-style: none;
+  margin: var(--space-5) 0;
+  padding: 0;
+}
+
+.resources li {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-3);
+  padding: var(--space-2) 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.chip {
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+  padding: 0.1em 0.55em;
+  border-radius: 999px;
+  border: 1px solid var(--border-strong);
+  color: var(--text-soft);
+  flex: none;
+}
+
+.chip.article {
+  color: var(--why);
+  border-color: var(--why);
+  background: var(--why-bg);
+}
+.chip.video {
+  color: var(--accent-soft);
+  border-color: var(--accent);
+  background: var(--accent-bg);
+}
+.chip.trainer {
+  color: var(--tip);
+  border-color: var(--tip);
+  background: var(--tip-bg);
+}
+
+/* ---------- Video embed (responsive 16:9) ---------- */
+
+.video-embed {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin: var(--space-5) 0;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: var(--bg-sunken);
+}
+
+.video-embed iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* "What you'll understand" list under the header */
+.outcomes {
+  margin: var(--space-4) 0 0;
+  padding-left: var(--space-5);
+  color: var(--text-soft);
+}
+
+.outcomes li {
+  margin-bottom: var(--space-1);
+}
+
+/* Inline scientific-pitch / note tokens */
+.note {
+  font-family: var(--font-mono);
+  font-size: 0.92em;
+  background: var(--accent-bg);
+  color: var(--accent-soft);
+  padding: 0.05em 0.35em;
+  border-radius: var(--radius-sm);
+  white-space: nowrap;
+}
+
+/* ---------- Lesson nav ---------- */
+
+.lesson-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-3);
+  margin-top: var(--space-8);
+  padding-top: var(--space-5);
+  border-top: 1px solid var(--border);
+}
+
+.lesson-nav a,
+.lesson-nav span {
+  flex: 1;
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--bg-card);
+  font-size: var(--text-sm);
+}
+
+.lesson-nav .nav-prev {
+  text-align: left;
+}
+.lesson-nav .nav-hub {
+  text-align: center;
+  flex: 0 0 auto;
+}
+.lesson-nav .nav-next {
+  text-align: right;
+}
+
+.lesson-nav .nav-disabled {
+  color: var(--text-muted);
+  background: transparent;
+  border-style: dashed;
+}
+
+/* ---------- Footer ---------- */
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding: var(--space-6) 0;
+  color: var(--text-muted);
+  font-size: var(--text-sm);
+}
+
+/* ---------- Landscape-first: give scores & diagrams room ---------- */
+
+@media (orientation: landscape) and (max-width: 1024px) {
+  .wrap {
+    max-width: 100%;
+  }
+
+  .score,
+  .diagram {
+    margin-left: calc(-1 * var(--space-3));
+    margin-right: calc(-1 * var(--space-3));
+  }
+}
+
+@media (max-width: 540px) {
+  :root {
+    --text-3xl: 2rem;
+    --text-2xl: 1.6rem;
+  }
+
+  .wrap {
+    padding: 0 var(--space-4);
+  }
+
+  .lesson-nav {
+    flex-wrap: wrap;
+  }
+
+  .lesson-nav a,
+  .lesson-nav span {
+    flex-basis: 100%;
+    text-align: center;
+  }
+}
