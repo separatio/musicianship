@@ -168,7 +168,7 @@
           "n": 18,
           "title": "Modulation",
           "file": "lessons/theory/18-modulation.html",
-          "status": "planned",
+          "status": "published",
           "summary": "Changing key mid-piece via pivot chords and other modulation techniques.",
           "prereqs": ["17-secondary-dominants"]
         },
@@ -177,7 +177,7 @@
           "n": 19,
           "title": "Modal Mixture",
           "file": "lessons/theory/19-modal-mixture.html",
-          "status": "planned",
+          "status": "published",
           "summary": "Borrowing chords from the parallel mode for added colour.",
           "prereqs": ["16-harmonic-progression", "07-minor-scales"]
         },
@@ -186,7 +186,7 @@
           "n": 20,
           "title": "Chromatic Harmony",
           "file": "lessons/theory/20-chromatic-harmony.html",
-          "status": "planned",
+          "status": "published",
           "summary": "Neapolitan and augmented-sixth chords and other chromatic resources.",
           "prereqs": ["18-modulation", "19-modal-mixture"]
         },
@@ -195,7 +195,7 @@
           "n": 21,
           "title": "Extended & Altered Jazz Harmony",
           "file": "lessons/theory/21-extended-altered-jazz.html",
-          "status": "planned",
+          "status": "published",
           "summary": "Ninths, elevenths, thirteenths, alterations, and jazz chord symbols.",
           "prereqs": ["11-seventh-chords", "20-chromatic-harmony"]
         },
