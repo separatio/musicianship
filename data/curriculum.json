@@ -57,7 +57,7 @@
           "n": 6,
           "title": "The Major Scale & Circle of Fifths",
           "file": "lessons/theory/06-major-scale-circle-of-fifths.html",
-          "status": "planned",
+          "status": "published",
           "summary": "Building major scales, key signatures, and the circle of fifths as a map of keys.",
           "prereqs": ["05-intervals"]
         },
@@ -66,7 +66,7 @@
           "n": 7,
           "title": "Minor Scales",
           "file": "lessons/theory/07-minor-scales.html",
-          "status": "planned",
+          "status": "published",
           "summary": "Natural, harmonic, and melodic minor, and relative vs parallel relationships.",
           "prereqs": ["06-major-scale-circle-of-fifths"]
         },
@@ -75,7 +75,7 @@
           "n": 8,
           "title": "Modes, Pentatonic & Blues",
           "file": "lessons/theory/08-modes-pentatonic-blues.html",
-          "status": "planned",
+          "status": "published",
           "summary": "The seven diatonic modes plus pentatonic and blues scales and their colours.",
           "prereqs": ["06-major-scale-circle-of-fifths", "07-minor-scales"]
         },
@@ -84,7 +84,7 @@
           "n": 9,
           "title": "Solfège & Sight-Singing",
           "file": "lessons/theory/09-solfege-sight-singing.html",
-          "status": "planned",
+          "status": "published",
           "summary": "Movable-do solfège and a method for singing melodies at sight.",
           "prereqs": ["06-major-scale-circle-of-fifths"]
         },
