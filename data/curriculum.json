@@ -378,7 +378,7 @@
           "n": 1,
           "title": "Example Piece: \"Sadness and Sorrow\"",
           "file": "lessons/repertoire/01-sadness-and-sorrow.html",
-          "status": "planned",
+          "status": "published",
           "summary": "A gentle minor-key arpeggio study exercising minor scales and diatonic harmony.",
           "prereqs": [
             "theory/07-minor-scales",
@@ -390,7 +390,7 @@
           "n": 2,
           "title": "Example Piece: Fingerstyle Intro",
           "file": "lessons/repertoire/02-nothing-else-matters-intro.html",
-          "status": "planned",
+          "status": "published",
           "summary": "An open-string fingerstyle intro exercising PIMA technique and triads.",
           "prereqs": ["guitar/05-technique-pima-picking", "theory/10-triads"]
         },
@@ -399,7 +399,7 @@
           "n": 3,
           "title": "Example Piece: Travis-Picking Study",
           "file": "lessons/repertoire/03-dust-in-the-wind.html",
-          "status": "planned",
+          "status": "published",
           "summary": "A Travis-picking study exercising the major scale and descending bass lines.",
           "prereqs": [
             "theory/06-major-scale-circle-of-fifths",
@@ -411,7 +411,7 @@
           "n": 4,
           "title": "Example Piece: Minor Ballad",
           "file": "lessons/repertoire/04-lonely-day.html",
-          "status": "planned",
+          "status": "published",
           "summary": "A minor ballad exercising modal mixture and cadence types.",
           "prereqs": ["theory/19-modal-mixture", "theory/14-cadences-phrase"]
         },
@@ -420,7 +420,7 @@
           "n": 5,
           "title": "Example Piece: Riff & Loop",
           "file": "lessons/repertoire/05-sweet-dreams.html",
-          "status": "planned",
+          "status": "published",
           "summary": "A repeating minor riff exercising harmonic progression and ear training.",
           "prereqs": [
             "theory/16-harmonic-progression",
