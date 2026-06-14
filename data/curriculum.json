@@ -129,7 +129,7 @@
           "n": 14,
           "title": "Cadences & Phrase Structure",
           "file": "lessons/theory/14-cadences-phrase.html",
-          "status": "planned",
+          "status": "published",
           "summary": "Authentic, plagal, half, and deceptive cadences and how phrases close.",
           "prereqs": ["12-diatonic-harmony-roman-numerals"]
         },
@@ -138,7 +138,7 @@
           "n": 15,
           "title": "Non-Chord Tones",
           "file": "lessons/theory/15-non-chord-tones.html",
-          "status": "planned",
+          "status": "published",
           "summary": "Passing tones, neighbours, suspensions, and other melodic embellishments.",
           "prereqs": ["13-satb-voice-leading"]
         },
@@ -147,7 +147,7 @@
           "n": 16,
           "title": "Harmonic Progression",
           "file": "lessons/theory/16-harmonic-progression.html",
-          "status": "planned",
+          "status": "published",
           "summary": "How chords tend to move: functional families and common progressions.",
           "prereqs": [
             "12-diatonic-harmony-roman-numerals",
@@ -159,7 +159,7 @@
           "n": 17,
           "title": "Secondary Dominants",
           "file": "lessons/theory/17-secondary-dominants.html",
-          "status": "planned",
+          "status": "published",
           "summary": "Tonicizing chords other than the tonic with applied dominant harmony.",
           "prereqs": ["16-harmonic-progression"]
         },
