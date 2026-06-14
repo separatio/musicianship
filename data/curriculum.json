@@ -204,7 +204,7 @@
           "n": 22,
           "title": "Species Counterpoint",
           "file": "lessons/theory/22-species-counterpoint.html",
-          "status": "planned",
+          "status": "published",
           "summary": "Writing independent melodic lines through the five species.",
           "prereqs": ["13-satb-voice-leading", "15-non-chord-tones"]
         },
@@ -213,7 +213,7 @@
           "n": 23,
           "title": "Figured Bass & Fugue",
           "file": "lessons/theory/23-figured-bass-fugue.html",
-          "status": "planned",
+          "status": "published",
           "summary": "Realizing figured bass and the architecture of a fugue.",
           "prereqs": ["22-species-counterpoint"]
         },
@@ -222,7 +222,7 @@
           "n": 24,
           "title": "Form & Analysis",
           "file": "lessons/theory/24-form-analysis.html",
-          "status": "planned",
+          "status": "published",
           "summary": "Binary, ternary, rondo, and sonata forms as large-scale structure.",
           "prereqs": ["16-harmonic-progression", "14-cadences-phrase"]
         },
@@ -231,7 +231,7 @@
           "n": 25,
           "title": "Analyzing a Piece",
           "file": "lessons/theory/25-analyzing-a-piece.html",
-          "status": "planned",
+          "status": "published",
           "summary": "Putting the whole toolkit together to analyze a complete short work.",
           "prereqs": ["24-form-analysis", "20-chromatic-harmony"]
         },
@@ -240,7 +240,7 @@
           "n": 26,
           "title": "Ear Training",
           "file": "lessons/theory/26-ear-training.html",
-          "status": "planned",
+          "status": "published",
           "summary": "Recognizing intervals, chords, and progressions by ear with a study plan.",
           "prereqs": ["05-intervals", "10-triads", "16-harmonic-progression"]
         }
