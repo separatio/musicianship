@@ -439,7 +439,7 @@
           "n": 1,
           "title": "Building Practice Routines",
           "file": "lessons/practice/01-practice-routines.html",
-          "status": "planned",
+          "status": "published",
           "summary": "Structuring focused practice sessions with goals, blocks, and review.",
           "prereqs": []
         },
@@ -448,7 +448,7 @@
           "n": 2,
           "title": "Metronome Work",
           "file": "lessons/practice/02-metronome-work.html",
-          "status": "planned",
+          "status": "published",
           "summary": "Using a metronome to build steady time and gradually raise tempo.",
           "prereqs": ["theory/03-rhythm-meter", "01-practice-routines"]
         },
@@ -457,7 +457,7 @@
           "n": 3,
           "title": "Sight-Reading Drill Plan",
           "file": "lessons/practice/03-sight-reading-drill-plan.html",
-          "status": "planned",
+          "status": "published",
           "summary": "A graded daily plan for improving reading at sight.",
           "prereqs": ["theory/02-notation-clefs", "01-practice-routines"]
         },
@@ -466,7 +466,7 @@
           "n": 4,
           "title": "Ear-Training Routine",
           "file": "lessons/practice/04-ear-training-routine.html",
-          "status": "planned",
+          "status": "published",
           "summary": "A repeatable routine for interval, chord, and progression recognition.",
           "prereqs": ["theory/26-ear-training", "01-practice-routines"]
         }
