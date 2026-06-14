@@ -12,7 +12,7 @@
           "n": 1,
           "title": "Pitch & the Chromatic Scale",
           "file": "lessons/theory/01-pitch-chromatic.html",
-          "status": "planned",
+          "status": "published",
           "summary": "Note names, sharps and flats, octaves, and the twelve-tone chromatic scale.",
           "prereqs": []
         },
@@ -21,7 +21,7 @@
           "n": 2,
           "title": "Notation & Clefs",
           "file": "lessons/theory/02-notation-clefs.html",
-          "status": "planned",
+          "status": "published",
           "summary": "The staff, treble and bass clefs, ledger lines, and reading pitch from the page.",
           "prereqs": ["01-pitch-chromatic"]
         },
@@ -30,7 +30,7 @@
           "n": 3,
           "title": "Rhythm & Meter",
           "file": "lessons/theory/03-rhythm-meter.html",
-          "status": "planned",
+          "status": "published",
           "summary": "Note durations, rests, time signatures, beat, and how meter groups pulse.",
           "prereqs": ["02-notation-clefs"]
         },
@@ -39,7 +39,7 @@
           "n": 4,
           "title": "Score Conventions",
           "file": "lessons/theory/04-score-conventions.html",
-          "status": "planned",
+          "status": "published",
           "summary": "Dynamics, articulations, repeats, tempo marks, and how to read a full score.",
           "prereqs": ["02-notation-clefs", "03-rhythm-meter"]
         },
