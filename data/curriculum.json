@@ -93,7 +93,7 @@
           "n": 10,
           "title": "Triads",
           "file": "lessons/theory/10-triads.html",
-          "status": "planned",
+          "status": "published",
           "summary": "Major, minor, diminished, and augmented triads, and their inversions.",
           "prereqs": ["05-intervals", "06-major-scale-circle-of-fifths"]
         },
@@ -102,7 +102,7 @@
           "n": 11,
           "title": "Seventh Chords",
           "file": "lessons/theory/11-seventh-chords.html",
-          "status": "planned",
+          "status": "published",
           "summary": "The five common seventh-chord qualities and how the seventh changes colour.",
           "prereqs": ["10-triads"]
         },
@@ -111,7 +111,7 @@
           "n": 12,
           "title": "Diatonic Harmony & Roman Numerals",
           "file": "lessons/theory/12-diatonic-harmony-roman-numerals.html",
-          "status": "planned",
+          "status": "published",
           "summary": "The chords of a key and Roman-numeral analysis for labelling them.",
           "prereqs": ["10-triads", "11-seventh-chords"]
         },
@@ -120,7 +120,7 @@
           "n": 13,
           "title": "SATB Voice Leading",
           "file": "lessons/theory/13-satb-voice-leading.html",
-          "status": "planned",
+          "status": "published",
           "summary": "Four-part writing rules: spacing, doubling, and smooth voice motion.",
           "prereqs": ["12-diatonic-harmony-roman-numerals"]
         },
