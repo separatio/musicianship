@@ -1,0 +1,476 @@
+{
+  "title": "Musicianship",
+  "tagline": "Understand music itself — theory-first, applied to guitar and piano.",
+  "tracks": [
+    {
+      "id": "theory",
+      "name": "Theory Core",
+      "blurb": "The backbone of the suite: pitch, notation, rhythm, harmony, counterpoint, and analysis, built up in order so every later idea rests on an earlier one.",
+      "lessons": [
+        {
+          "id": "01-pitch-chromatic",
+          "n": 1,
+          "title": "Pitch & the Chromatic Scale",
+          "file": "lessons/theory/01-pitch-chromatic.html",
+          "status": "planned",
+          "summary": "Note names, sharps and flats, octaves, and the twelve-tone chromatic scale.",
+          "prereqs": []
+        },
+        {
+          "id": "02-notation-clefs",
+          "n": 2,
+          "title": "Notation & Clefs",
+          "file": "lessons/theory/02-notation-clefs.html",
+          "status": "planned",
+          "summary": "The staff, treble and bass clefs, ledger lines, and reading pitch from the page.",
+          "prereqs": ["01-pitch-chromatic"]
+        },
+        {
+          "id": "03-rhythm-meter",
+          "n": 3,
+          "title": "Rhythm & Meter",
+          "file": "lessons/theory/03-rhythm-meter.html",
+          "status": "planned",
+          "summary": "Note durations, rests, time signatures, beat, and how meter groups pulse.",
+          "prereqs": ["02-notation-clefs"]
+        },
+        {
+          "id": "04-score-conventions",
+          "n": 4,
+          "title": "Score Conventions",
+          "file": "lessons/theory/04-score-conventions.html",
+          "status": "planned",
+          "summary": "Dynamics, articulations, repeats, tempo marks, and how to read a full score.",
+          "prereqs": ["02-notation-clefs", "03-rhythm-meter"]
+        },
+        {
+          "id": "05-intervals",
+          "n": 5,
+          "title": "Intervals",
+          "file": "lessons/theory/05-intervals.html",
+          "status": "published",
+          "summary": "Measuring distance between pitches: quality, number, and how intervals sound.",
+          "prereqs": ["01-pitch-chromatic", "02-notation-clefs"]
+        },
+        {
+          "id": "06-major-scale-circle-of-fifths",
+          "n": 6,
+          "title": "The Major Scale & Circle of Fifths",
+          "file": "lessons/theory/06-major-scale-circle-of-fifths.html",
+          "status": "planned",
+          "summary": "Building major scales, key signatures, and the circle of fifths as a map of keys.",
+          "prereqs": ["05-intervals"]
+        },
+        {
+          "id": "07-minor-scales",
+          "n": 7,
+          "title": "Minor Scales",
+          "file": "lessons/theory/07-minor-scales.html",
+          "status": "planned",
+          "summary": "Natural, harmonic, and melodic minor, and relative vs parallel relationships.",
+          "prereqs": ["06-major-scale-circle-of-fifths"]
+        },
+        {
+          "id": "08-modes-pentatonic-blues",
+          "n": 8,
+          "title": "Modes, Pentatonic & Blues",
+          "file": "lessons/theory/08-modes-pentatonic-blues.html",
+          "status": "planned",
+          "summary": "The seven diatonic modes plus pentatonic and blues scales and their colours.",
+          "prereqs": ["06-major-scale-circle-of-fifths", "07-minor-scales"]
+        },
+        {
+          "id": "09-solfege-sight-singing",
+          "n": 9,
+          "title": "Solfège & Sight-Singing",
+          "file": "lessons/theory/09-solfege-sight-singing.html",
+          "status": "planned",
+          "summary": "Movable-do solfège and a method for singing melodies at sight.",
+          "prereqs": ["06-major-scale-circle-of-fifths"]
+        },
+        {
+          "id": "10-triads",
+          "n": 10,
+          "title": "Triads",
+          "file": "lessons/theory/10-triads.html",
+          "status": "planned",
+          "summary": "Major, minor, diminished, and augmented triads, and their inversions.",
+          "prereqs": ["05-intervals", "06-major-scale-circle-of-fifths"]
+        },
+        {
+          "id": "11-seventh-chords",
+          "n": 11,
+          "title": "Seventh Chords",
+          "file": "lessons/theory/11-seventh-chords.html",
+          "status": "planned",
+          "summary": "The five common seventh-chord qualities and how the seventh changes colour.",
+          "prereqs": ["10-triads"]
+        },
+        {
+          "id": "12-diatonic-harmony-roman-numerals",
+          "n": 12,
+          "title": "Diatonic Harmony & Roman Numerals",
+          "file": "lessons/theory/12-diatonic-harmony-roman-numerals.html",
+          "status": "planned",
+          "summary": "The chords of a key and Roman-numeral analysis for labelling them.",
+          "prereqs": ["10-triads", "11-seventh-chords"]
+        },
+        {
+          "id": "13-satb-voice-leading",
+          "n": 13,
+          "title": "SATB Voice Leading",
+          "file": "lessons/theory/13-satb-voice-leading.html",
+          "status": "planned",
+          "summary": "Four-part writing rules: spacing, doubling, and smooth voice motion.",
+          "prereqs": ["12-diatonic-harmony-roman-numerals"]
+        },
+        {
+          "id": "14-cadences-phrase",
+          "n": 14,
+          "title": "Cadences & Phrase Structure",
+          "file": "lessons/theory/14-cadences-phrase.html",
+          "status": "planned",
+          "summary": "Authentic, plagal, half, and deceptive cadences and how phrases close.",
+          "prereqs": ["12-diatonic-harmony-roman-numerals"]
+        },
+        {
+          "id": "15-non-chord-tones",
+          "n": 15,
+          "title": "Non-Chord Tones",
+          "file": "lessons/theory/15-non-chord-tones.html",
+          "status": "planned",
+          "summary": "Passing tones, neighbours, suspensions, and other melodic embellishments.",
+          "prereqs": ["13-satb-voice-leading"]
+        },
+        {
+          "id": "16-harmonic-progression",
+          "n": 16,
+          "title": "Harmonic Progression",
+          "file": "lessons/theory/16-harmonic-progression.html",
+          "status": "planned",
+          "summary": "How chords tend to move: functional families and common progressions.",
+          "prereqs": [
+            "12-diatonic-harmony-roman-numerals",
+            "14-cadences-phrase"
+          ]
+        },
+        {
+          "id": "17-secondary-dominants",
+          "n": 17,
+          "title": "Secondary Dominants",
+          "file": "lessons/theory/17-secondary-dominants.html",
+          "status": "planned",
+          "summary": "Tonicizing chords other than the tonic with applied dominant harmony.",
+          "prereqs": ["16-harmonic-progression"]
+        },
+        {
+          "id": "18-modulation",
+          "n": 18,
+          "title": "Modulation",
+          "file": "lessons/theory/18-modulation.html",
+          "status": "planned",
+          "summary": "Changing key mid-piece via pivot chords and other modulation techniques.",
+          "prereqs": ["17-secondary-dominants"]
+        },
+        {
+          "id": "19-modal-mixture",
+          "n": 19,
+          "title": "Modal Mixture",
+          "file": "lessons/theory/19-modal-mixture.html",
+          "status": "planned",
+          "summary": "Borrowing chords from the parallel mode for added colour.",
+          "prereqs": ["16-harmonic-progression", "07-minor-scales"]
+        },
+        {
+          "id": "20-chromatic-harmony",
+          "n": 20,
+          "title": "Chromatic Harmony",
+          "file": "lessons/theory/20-chromatic-harmony.html",
+          "status": "planned",
+          "summary": "Neapolitan and augmented-sixth chords and other chromatic resources.",
+          "prereqs": ["18-modulation", "19-modal-mixture"]
+        },
+        {
+          "id": "21-extended-altered-jazz",
+          "n": 21,
+          "title": "Extended & Altered Jazz Harmony",
+          "file": "lessons/theory/21-extended-altered-jazz.html",
+          "status": "planned",
+          "summary": "Ninths, elevenths, thirteenths, alterations, and jazz chord symbols.",
+          "prereqs": ["11-seventh-chords", "20-chromatic-harmony"]
+        },
+        {
+          "id": "22-species-counterpoint",
+          "n": 22,
+          "title": "Species Counterpoint",
+          "file": "lessons/theory/22-species-counterpoint.html",
+          "status": "planned",
+          "summary": "Writing independent melodic lines through the five species.",
+          "prereqs": ["13-satb-voice-leading", "15-non-chord-tones"]
+        },
+        {
+          "id": "23-figured-bass-fugue",
+          "n": 23,
+          "title": "Figured Bass & Fugue",
+          "file": "lessons/theory/23-figured-bass-fugue.html",
+          "status": "planned",
+          "summary": "Realizing figured bass and the architecture of a fugue.",
+          "prereqs": ["22-species-counterpoint"]
+        },
+        {
+          "id": "24-form-analysis",
+          "n": 24,
+          "title": "Form & Analysis",
+          "file": "lessons/theory/24-form-analysis.html",
+          "status": "planned",
+          "summary": "Binary, ternary, rondo, and sonata forms as large-scale structure.",
+          "prereqs": ["16-harmonic-progression", "14-cadences-phrase"]
+        },
+        {
+          "id": "25-analyzing-a-piece",
+          "n": 25,
+          "title": "Analyzing a Piece",
+          "file": "lessons/theory/25-analyzing-a-piece.html",
+          "status": "planned",
+          "summary": "Putting the whole toolkit together to analyze a complete short work.",
+          "prereqs": ["24-form-analysis", "20-chromatic-harmony"]
+        },
+        {
+          "id": "26-ear-training",
+          "n": 26,
+          "title": "Ear Training",
+          "file": "lessons/theory/26-ear-training.html",
+          "status": "planned",
+          "summary": "Recognizing intervals, chords, and progressions by ear with a study plan.",
+          "prereqs": ["05-intervals", "10-triads", "16-harmonic-progression"]
+        }
+      ]
+    },
+    {
+      "id": "guitar",
+      "name": "Guitar Application",
+      "blurb": "Map the theory onto six strings: the fretboard, reading on guitar, the CAGED system, and connecting positions.",
+      "lessons": [
+        {
+          "id": "01-fretboard-map",
+          "n": 1,
+          "title": "Mapping the Fretboard",
+          "file": "lessons/guitar/01-fretboard-map.html",
+          "status": "planned",
+          "summary": "Finding every note on the neck and seeing octave and string patterns.",
+          "prereqs": ["theory/01-pitch-chromatic"]
+        },
+        {
+          "id": "02-reading-on-guitar",
+          "n": 2,
+          "title": "Reading Music on Guitar",
+          "file": "lessons/guitar/02-reading-on-guitar.html",
+          "status": "planned",
+          "summary": "Connecting standard notation to fret positions in first position and beyond.",
+          "prereqs": ["theory/02-notation-clefs", "01-fretboard-map"]
+        },
+        {
+          "id": "03-caged-system",
+          "n": 3,
+          "title": "The CAGED System",
+          "file": "lessons/guitar/03-caged-system.html",
+          "status": "planned",
+          "summary": "Five movable chord and scale shapes that cover the whole neck.",
+          "prereqs": ["01-fretboard-map", "theory/10-triads"]
+        },
+        {
+          "id": "04-connecting-scale-positions",
+          "n": 4,
+          "title": "Connecting Scale Positions",
+          "file": "lessons/guitar/04-connecting-scale-positions.html",
+          "status": "planned",
+          "summary": "Linking scale shapes across positions to play freely up the neck.",
+          "prereqs": [
+            "03-caged-system",
+            "theory/06-major-scale-circle-of-fifths"
+          ]
+        },
+        {
+          "id": "05-technique-pima-picking",
+          "n": 5,
+          "title": "Technique: PIMA & Picking",
+          "file": "lessons/guitar/05-technique-pima-picking.html",
+          "status": "planned",
+          "summary": "Right-hand fingerstyle (PIMA) and pick technique fundamentals.",
+          "prereqs": ["02-reading-on-guitar"]
+        },
+        {
+          "id": "06-chord-construction-on-guitar",
+          "n": 6,
+          "title": "Chord Construction on Guitar",
+          "file": "lessons/guitar/06-chord-construction-on-guitar.html",
+          "status": "planned",
+          "summary": "Building and voicing chords on the neck from their theory formulas.",
+          "prereqs": ["03-caged-system", "theory/11-seventh-chords"]
+        }
+      ]
+    },
+    {
+      "id": "piano",
+      "name": "Piano Application",
+      "blurb": "The keyboard as a visual theory laboratory: geography, the grand staff, scales, and chord voicings.",
+      "lessons": [
+        {
+          "id": "01-keyboard-geography",
+          "n": 1,
+          "title": "Keyboard Geography",
+          "file": "lessons/piano/01-keyboard-geography.html",
+          "status": "planned",
+          "summary": "Black-key groups, white-key names, and finding any note on the keyboard.",
+          "prereqs": ["theory/01-pitch-chromatic"]
+        },
+        {
+          "id": "02-reading-grand-staff",
+          "n": 2,
+          "title": "Reading the Grand Staff",
+          "file": "lessons/piano/02-reading-grand-staff.html",
+          "status": "planned",
+          "summary": "Treble and bass clefs together and reading both hands at once.",
+          "prereqs": ["theory/02-notation-clefs", "01-keyboard-geography"]
+        },
+        {
+          "id": "03-scales-arpeggios",
+          "n": 3,
+          "title": "Scales & Arpeggios",
+          "file": "lessons/piano/03-scales-arpeggios.html",
+          "status": "planned",
+          "summary": "Fingering major and minor scales and arpeggios across the keyboard.",
+          "prereqs": [
+            "01-keyboard-geography",
+            "theory/06-major-scale-circle-of-fifths"
+          ]
+        },
+        {
+          "id": "04-chord-voicings-inversions",
+          "n": 4,
+          "title": "Chord Voicings & Inversions",
+          "file": "lessons/piano/04-chord-voicings-inversions.html",
+          "status": "planned",
+          "summary": "Playing triads and sevenths in root position and inversions.",
+          "prereqs": ["03-scales-arpeggios", "theory/10-triads"]
+        },
+        {
+          "id": "05-piano-as-visualizer",
+          "n": 5,
+          "title": "Piano as a Theory Visualizer",
+          "file": "lessons/piano/05-piano-as-visualizer.html",
+          "status": "planned",
+          "summary": "Using the keyboard layout to see intervals, chords, and harmony at a glance.",
+          "prereqs": [
+            "04-chord-voicings-inversions",
+            "theory/12-diatonic-harmony-roman-numerals"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "repertoire",
+      "name": "Repertoire",
+      "blurb": "Theory-first breakdowns of well-known example pieces, chosen to exercise the concepts from the Theory Core on real music.",
+      "lessons": [
+        {
+          "id": "01-sadness-and-sorrow",
+          "n": 1,
+          "title": "Example Piece: \"Sadness and Sorrow\"",
+          "file": "lessons/repertoire/01-sadness-and-sorrow.html",
+          "status": "planned",
+          "summary": "A gentle minor-key arpeggio study exercising minor scales and diatonic harmony.",
+          "prereqs": [
+            "theory/07-minor-scales",
+            "theory/12-diatonic-harmony-roman-numerals"
+          ]
+        },
+        {
+          "id": "02-nothing-else-matters-intro",
+          "n": 2,
+          "title": "Example Piece: Fingerstyle Intro",
+          "file": "lessons/repertoire/02-nothing-else-matters-intro.html",
+          "status": "planned",
+          "summary": "An open-string fingerstyle intro exercising PIMA technique and triads.",
+          "prereqs": ["guitar/05-technique-pima-picking", "theory/10-triads"]
+        },
+        {
+          "id": "03-dust-in-the-wind",
+          "n": 3,
+          "title": "Example Piece: Travis-Picking Study",
+          "file": "lessons/repertoire/03-dust-in-the-wind.html",
+          "status": "planned",
+          "summary": "A Travis-picking study exercising the major scale and descending bass lines.",
+          "prereqs": [
+            "theory/06-major-scale-circle-of-fifths",
+            "theory/15-non-chord-tones"
+          ]
+        },
+        {
+          "id": "04-lonely-day",
+          "n": 4,
+          "title": "Example Piece: Minor Ballad",
+          "file": "lessons/repertoire/04-lonely-day.html",
+          "status": "planned",
+          "summary": "A minor ballad exercising modal mixture and cadence types.",
+          "prereqs": ["theory/19-modal-mixture", "theory/14-cadences-phrase"]
+        },
+        {
+          "id": "05-sweet-dreams",
+          "n": 5,
+          "title": "Example Piece: Riff & Loop",
+          "file": "lessons/repertoire/05-sweet-dreams.html",
+          "status": "planned",
+          "summary": "A repeating minor riff exercising harmonic progression and ear training.",
+          "prereqs": [
+            "theory/16-harmonic-progression",
+            "theory/26-ear-training"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "practice",
+      "name": "Practice System",
+      "blurb": "The scaffolding that turns study into skill: routines, metronome work, sight-reading plans, and ear-training drills.",
+      "lessons": [
+        {
+          "id": "01-practice-routines",
+          "n": 1,
+          "title": "Building Practice Routines",
+          "file": "lessons/practice/01-practice-routines.html",
+          "status": "planned",
+          "summary": "Structuring focused practice sessions with goals, blocks, and review.",
+          "prereqs": []
+        },
+        {
+          "id": "02-metronome-work",
+          "n": 2,
+          "title": "Metronome Work",
+          "file": "lessons/practice/02-metronome-work.html",
+          "status": "planned",
+          "summary": "Using a metronome to build steady time and gradually raise tempo.",
+          "prereqs": ["theory/03-rhythm-meter", "01-practice-routines"]
+        },
+        {
+          "id": "03-sight-reading-drill-plan",
+          "n": 3,
+          "title": "Sight-Reading Drill Plan",
+          "file": "lessons/practice/03-sight-reading-drill-plan.html",
+          "status": "planned",
+          "summary": "A graded daily plan for improving reading at sight.",
+          "prereqs": ["theory/02-notation-clefs", "01-practice-routines"]
+        },
+        {
+          "id": "04-ear-training-routine",
+          "n": 4,
+          "title": "Ear-Training Routine",
+          "file": "lessons/practice/04-ear-training-routine.html",
+          "status": "planned",
+          "summary": "A repeatable routine for interval, chord, and progression recognition.",
+          "prereqs": ["theory/26-ear-training", "01-practice-routines"]
+        }
+      ]
+    }
+  ]
+}
