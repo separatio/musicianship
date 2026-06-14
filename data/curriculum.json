@@ -320,7 +320,7 @@
           "n": 1,
           "title": "Keyboard Geography",
           "file": "lessons/piano/01-keyboard-geography.html",
-          "status": "planned",
+          "status": "published",
           "summary": "Black-key groups, white-key names, and finding any note on the keyboard.",
           "prereqs": ["theory/01-pitch-chromatic"]
         },
@@ -329,7 +329,7 @@
           "n": 2,
           "title": "Reading the Grand Staff",
           "file": "lessons/piano/02-reading-grand-staff.html",
-          "status": "planned",
+          "status": "published",
           "summary": "Treble and bass clefs together and reading both hands at once.",
           "prereqs": ["theory/02-notation-clefs", "01-keyboard-geography"]
         },
@@ -338,7 +338,7 @@
           "n": 3,
           "title": "Scales & Arpeggios",
           "file": "lessons/piano/03-scales-arpeggios.html",
-          "status": "planned",
+          "status": "published",
           "summary": "Fingering major and minor scales and arpeggios across the keyboard.",
           "prereqs": [
             "01-keyboard-geography",
@@ -350,7 +350,7 @@
           "n": 4,
           "title": "Chord Voicings & Inversions",
           "file": "lessons/piano/04-chord-voicings-inversions.html",
-          "status": "planned",
+          "status": "published",
           "summary": "Playing triads and sevenths in root position and inversions.",
           "prereqs": ["03-scales-arpeggios", "theory/10-triads"]
         },
@@ -359,7 +359,7 @@
           "n": 5,
           "title": "Piano as a Theory Visualizer",
           "file": "lessons/piano/05-piano-as-visualizer.html",
-          "status": "planned",
+          "status": "published",
           "summary": "Using the keyboard layout to see intervals, chords, and harmony at a glance.",
           "prereqs": [
             "04-chord-voicings-inversions",
