@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Four-part (SATB) writing &amp; voice-leading — Musicianship · Theory Core</title>
+    <meta
+      name="description"
+      content="The four voices and the grand staff, doubling and spacing, smooth voice-leading, and the great prohibitions — parallel fifths and parallel octaves — shown in fully realised four-part scores on a grand staff."
+    />
+    <link rel="stylesheet" href="../../assets/css/site.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap">
+        <p class="crumbs">
+          <a href="../../index.html">Musicianship</a>
+          <span class="sep">/</span>
+          <a href="../../index.html">Theory Core</a>
+          <span class="sep">/</span>
+          Four-part (SATB) writing &amp; voice-leading
+        </p>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <article class="lesson">
+        <div class="lesson-header">
+          <span class="track-tag">Theory Core · Lesson 13</span>
+          <h1>Four-part (SATB) writing &amp; voice-leading</h1>
+          <p class="lesson-prose">
+            So far a chord has been a single object — a triad, a Roman numeral.
+            Now we split it into <strong>four independent singing lines</strong>:
+            Soprano, Alto, Tenor, Bass. Four-part (<strong>SATB</strong>) writing
+            is the laboratory where every later harmony skill is forged, because
+            it forces you to answer the real question: not just <em>which</em>
+            chords, but <em>how each voice gets from one chord to the next</em>.
+            The rules below are not arbitrary etiquette — each one protects
+            something audible, and the lesson is mostly about the <em>why</em>.
+          </p>
+          <ul class="outcomes">
+            <li>Lay out the four voices on a grand staff with correct clefs and stems.</li>
+            <li>Double and space chord tones the way the common-practice tradition does — and know why.</li>
+            <li>Lead each voice smoothly: smallest motion, common tones, resolve tendency tones.</li>
+            <li>Recognise and avoid parallel fifths and octaves — and explain what they destroy.</li>
+            <li>Spot direct (hidden) fifths/octaves, voice crossing, and overlap.</li>
+          </ul>
+        </div>
+
+        <aside class="prereqs">
+          <h4>Before this lesson</h4>
+          <ul>
+            <li>Lesson 5 — Intervals (you must hear a fifth and an octave instantly).</li>
+            <li>Lesson 10 — Triads (root, third, fifth; root position vs. inversion).</li>
+            <li>Lesson 12 — Diatonic harmony &amp; Roman numerals (I, IV, V and the leading tone).</li>
+          </ul>
+        </aside>
+
+        <div class="lesson-prose">
+          <h2>1. The four voices and the grand staff</h2>
+          <p>
+            <strong>SATB</strong> labels four lines by register, highest to
+            lowest: <strong>S</strong>oprano, <strong>A</strong>lto,
+            <strong>T</strong>enor, <strong>B</strong>ass. The names come from
+            choral music, but in written theory they are simply four
+            <em>independent</em> parts, each kept inside a comfortable range:
+          </p>
+          <table>
+            <thead>
+              <tr><th>Voice</th><th>Usual range</th><th>Clef / staff</th><th>Stem</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Soprano</td><td>C4 (middle C) – A5</td><td>Treble (upper)</td><td>Up</td></tr>
+              <tr><td>Alto</td><td>F3 – D5</td><td>Treble (upper)</td><td>Down</td></tr>
+              <tr><td>Tenor</td><td>C3 – A4</td><td>Bass (lower)</td><td>Up</td></tr>
+              <tr><td>Bass</td><td>F2 – E4</td><td>Bass (lower)</td><td>Down</td></tr>
+            </tbody>
+          </table>
+          <p>
+            Two voices share each staff: <strong>Soprano and Alto</strong> on the
+            treble staff, <strong>Tenor and Bass</strong> on the bass staff. To
+            keep the two voices on a staff legible, the upper of the pair
+            (Soprano, Tenor) gets <strong>stems up</strong> and the lower (Alto,
+            Bass) gets <strong>stems down</strong>. That single convention lets
+            you read four lines off two staves without colour or labels.
+          </p>
+          <div class="callout why">
+            <span class="callout-label">Why fixed ranges and stems?</span>
+            <p>
+              The ranges keep each part singable and keep the four lines from
+              piling into the same register, where they would stop sounding like
+              four voices. The stem rule is pure readability: with two notes on
+              one staff, the only unambiguous way to say &ldquo;this note belongs
+              to the alto, that one to the soprano&rdquo; is the stem direction —
+              so it is treated as law, even when both voices happen to share a
+              note.
+            </p>
+          </div>
+          <p>
+            Here is a complete <strong>I–IV–V–I</strong> in C major realised in
+            four voices. Read it as four melodies at once: follow the soprano on
+            top, then the bass on the bottom, then fill in the inner two.
+          </p>
+        </div>
+
+        <figure class="score">
+          <script type="text/abc">
+X:1
+T:I–IV–V–I in four voices (C major)
+M:4/4
+L:1/4
+%%score { (S A) (T B) }
+K:C
+V:S clef=treble name="S"
+V:A clef=treble name="A"
+V:T clef=bass name="T"
+V:B clef=bass name="B"
+[V:S] c4 | c4 | =B4 | c4 |]
+[V:A] E4 | F4 | D4 | E4 |]
+[V:T] G,4 | A,4 | G,4 | G,4 |]
+[V:B] "_I" C,4 | "_IV" F,,4 | "_V" G,,4 | "_I" C,4 |]
+          </script>
+          <figcaption>
+            S&nbsp;C5&ndash;C5&ndash;B4&ndash;C5, A&nbsp;E4&ndash;F4&ndash;D4&ndash;E4,
+            T&nbsp;G3&ndash;A3&ndash;G3&ndash;G3, B&nbsp;C3&ndash;F2&ndash;G2&ndash;C3.
+            Treble staff = Soprano (stems up) + Alto (stems down); bass staff =
+            Tenor (up) + Bass (down). The whole thing is built from the rules in
+            sections 2&ndash;4.
+          </figcaption>
+        </figure>
+
+        <div class="lesson-prose">
+          <p>
+            Notice three things already visible in that score, each a rule we are
+            about to justify: every chord <strong>doubles its root</strong> (two
+            voices on C in chord 1); no upper voice leaps far; and the leading
+            tone <strong>B4 in the soprano rises to C5</strong> at the final
+            chord. Here is that opening chord laid on the keyboard so you can see
+            the four voices as four keys spread across the registers.
+          </p>
+        </div>
+
+        <div class="diagram"
+          data-keyboard='{"octaves":3,"startNote":"C","startOctave":3,"showLabels":true,"highlight":[{"note":"C3","label":"B (root)"},{"note":"G3","label":"T"},{"note":"E4","label":"A"},{"note":"C5","label":"S (root)"}]}'>
+        </div>
+        <p class="lesson-prose">
+          <small
+            >The tonic chord of the score above: Bass C3 and Soprano C5 both on
+            the root (the root is doubled), Tenor on G3 (the fifth), Alto on E4
+            (the third). The same triad, but voiced as four spread-out keys
+            rather than a single close grip.</small
+          >
+        </p>
+
+        <div class="lesson-prose">
+          <h2>2. Doubling: which note to repeat</h2>
+          <p>
+            A triad has three notes; SATB has four voices. One note must be
+            <strong>doubled</strong> — sounded by two voices (usually an octave
+            apart). The default rule in root-position triads is the simplest one
+            to remember and the safest:
+          </p>
+          <ul>
+            <li>
+              <strong>Double the root.</strong> The root is the most stable,
+              least directional tone, so doubling it never creates a problem.
+            </li>
+            <li>
+              <strong>Never double the leading tone.</strong> Scale degree 7
+              (the leading tone, B in C major) is a strong <em>tendency tone</em>
+              that pulls up to the tonic. Two leading tones would both want to
+              rise to the same tonic — and two voices moving to the same note in
+              the same direction is a parallel octave (section 5).
+            </li>
+            <li>
+              <strong>Never double the chordal seventh.</strong> In a seventh
+              chord the seventh must fall by step to resolve; doubling it forces
+              the same parallel-octave problem on the way down.
+            </li>
+          </ul>
+          <div class="callout why">
+            <span class="callout-label">Why the leading tone is off-limits</span>
+            <p>
+              A doubling rule is really a voice-leading rule in disguise. The
+              leading tone has only one good destination — up a half step to the
+              tonic. Give it to two voices and both are obligated to walk to the
+              tonic together, producing forbidden parallel octaves (or forcing
+              one of them to resolve <em>wrongly</em>, downward). Doubling the
+              root sidesteps the trap because the root has no such obligation; it
+              can stay, rise, or fall freely.
+            </p>
+          </div>
+        </div>
+
+        <div class="lesson-prose">
+          <h2>3. Spacing: how far apart the voices sit</h2>
+          <p>
+            Once you know which notes, you choose how far apart to stack them.
+            The governing rule concerns the <strong>upper three voices</strong>:
+          </p>
+          <ul>
+            <li>
+              Keep <strong>no more than an octave</strong> between adjacent
+              <em>upper</em> voices — that is, between <strong>Soprano&ndash;Alto</strong>
+              and between <strong>Alto&ndash;Tenor</strong>.
+            </li>
+            <li>
+              The <strong>Tenor&ndash;Bass</strong> gap is allowed to be wider
+              (up to a twelfth is normal). The bass is the harmonic foundation
+              and naturally sits apart from the choir above it.
+            </li>
+          </ul>
+          <p>
+            This also names two textures. When the three upper voices fit inside
+            one octave (Soprano to Tenor), the chord is in
+            <strong>close structure</strong> (close position); when they spread
+            past an octave, it is <strong>open structure</strong> (open
+            position). Both are correct; composers alternate them for colour.
+          </p>
+          <div class="callout why">
+            <span class="callout-label">Why cap the upper voices but not the bass</span>
+            <p>
+              A gap larger than an octave between two upper voices leaves an
+              audible hole in the middle of the chord — the harmony sounds thin
+              and the inner voice loses contact with its neighbour. The bass is
+              different: ears expect a foundation set apart from the chord, so a
+              wide tenor-to-bass gap reads as &ldquo;solid&rdquo;, not
+              &ldquo;hollow&rdquo;. The rule protects the <em>blend of the
+              choir</em>, which lives in the upper three voices.
+            </p>
+          </div>
+        </div>
+
+        <div class="lesson-prose">
+          <h2>4. Voice-leading: getting from chord to chord</h2>
+          <p>
+            Voice-leading is the heart of the craft: connect each chord to the
+            next so that every line moves <em>well</em>. The classic principles,
+            in priority order:
+          </p>
+          <ul>
+            <li>
+              <strong>Keep common tones.</strong> If a note belongs to both
+              chords, hold it in the same voice. (G is in both V and I in the
+              final two chords of our score — the tenor simply stays on G3.)
+            </li>
+            <li>
+              <strong>Move each voice the smallest distance.</strong> Step or
+              stay rather than leap; small motion is smooth and singable.
+            </li>
+            <li>
+              <strong>Resolve the leading tone up to the tonic</strong> (scale
+              degree 7 &rarr; 8), especially when it is in the soprano — this is
+              what makes a cadence sound finished.
+            </li>
+            <li>
+              <strong>Resolve a chordal seventh down by step.</strong> A seventh
+              is a dissonance that leans downward; let it fall to the note below.
+            </li>
+            <li>
+              <strong>Prefer contrary and oblique motion.</strong> When voices
+              move in opposite directions (contrary) or one holds while another
+              moves (oblique), each line keeps its own identity. Save parallel
+              and similar motion for the consonant thirds and sixths.
+            </li>
+          </ul>
+          <p>
+            The four kinds of motion between any two voices are worth naming once,
+            because the next section bans one specific case of <em>parallel</em>
+            motion:
+          </p>
+          <table>
+            <thead>
+              <tr><th>Motion</th><th>What the two voices do</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Contrary</td><td>Move in opposite directions (one up, one down).</td></tr>
+              <tr><td>Oblique</td><td>One voice holds; the other moves.</td></tr>
+              <tr><td>Similar</td><td>Move the same direction by different intervals.</td></tr>
+              <tr><td>Parallel</td><td>Move the same direction by the same interval.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="lesson-prose">
+          <h2>5. The great prohibition: parallel fifths &amp; octaves</h2>
+          <p>
+            The single most famous rule of common-practice harmony:
+            <strong>do not write consecutive (parallel) perfect fifths or
+            perfect octaves between the same pair of voices.</strong> If two
+            voices are a perfect fifth apart and both move so they are a perfect
+            fifth apart again — in the same direction — that is a
+            <strong>parallel fifth</strong>. The same with octaves (and unisons)
+            is a <strong>parallel octave</strong>.
+          </p>
+          <div class="callout why">
+            <span class="callout-label">Why they are forbidden — the real reason</span>
+            <p>
+              The whole point of four-part writing is <strong>four
+              <em>independent</em> voices</strong>. The octave and the perfect
+              fifth are the two most fused, most blended intervals there are.
+              When two voices glide in parallel octaves they momentarily sound
+              like <em>one</em> voice doubled — the texture loses a part. Parallel
+              fifths fuse almost as strongly and, because the fifth defines the
+              key, a chain of them blurs the harmony as well. The ban is not
+              superstition: it is the mechanical consequence of wanting voices
+              that stay distinct. (Parallel <em>thirds</em> and <em>sixths</em>
+              are fine — those intervals don&rsquo;t fuse, so the voices keep their
+              independence.)
+            </p>
+          </div>
+          <p>
+            Below is a deliberately <strong>wrong</strong> V&ndash;I, then a
+            corrected one. In the bad version the <strong>Tenor and Bass</strong>
+            are a perfect fifth apart on chord&nbsp;1 (Tenor D3 over Bass G2) and
+            <em>again</em> a perfect fifth apart on chord&nbsp;2 (Tenor G3 over
+            Bass C3), both rising — consecutive perfect fifths between that pair.
+          </p>
+        </div>
+
+        <figure class="score">
+          <script type="text/abc">
+X:1
+T:Parallel fifths — Tenor over Bass (V–I, C major). WRONG.
+M:4/4
+L:1/4
+%%score { (S A) (T B) }
+K:C
+V:S clef=treble
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+[V:S] D4 | E4 |]
+[V:A] =B,4 | C4 |]
+[V:T] "_5" D,4 | "_5" G,4 |]
+[V:B] "_G:" G,,4 | "_C:" C,4 |]
+          </script>
+          <figcaption>
+            WRONG. Tenor D3&rarr;G3 over Bass G2&rarr;C3: a perfect fifth moving
+            to a perfect fifth, both ascending — a textbook parallel fifth between
+            Tenor and Bass. The two voices fuse and momentarily stop sounding
+            independent.
+          </figcaption>
+        </figure>
+
+        <div class="lesson-prose">
+          <p>
+            The fix keeps the same chords but holds the common tone: the
+            <strong>Tenor stays on G3</strong> (G belongs to both V and I), so it
+            no longer marches in fifths with the bass. The bass still leaps up a
+            fourth (G2&rarr;C3) and the soprano carries the leading tone B4 up to
+            C5, but the offending Tenor&ndash;Bass parallel is dissolved by giving
+            the tenor <strong>oblique motion</strong> — it simply holds while the
+            bass moves.
+          </p>
+        </div>
+
+        <figure class="score">
+          <script type="text/abc">
+X:1
+T:Corrected — Tenor holds the common tone. No parallels.
+M:4/4
+L:1/4
+%%score { (S A) (T B) }
+K:C
+V:S clef=treble
+V:A clef=treble
+V:T clef=bass
+V:B clef=bass
+[V:S] "_7" =B4 | "_8" c4 |]
+[V:A] D4 | E4 |]
+[V:T] "_G" G,4 | "_G" G,4 |]
+[V:B] "_G:" G,,4 | "_C:" C,4 |]
+          </script>
+          <figcaption>
+            CORRECT. Tenor holds G3 (oblique motion against the rising bass), so
+            the Tenor&ndash;Bass fifths are gone. Soprano resolves the leading
+            tone B4&rarr;C5 (degree 7&rarr;8), Alto steps D4&rarr;E4. Every pair
+            of voices now keeps its independence.
+          </figcaption>
+        </figure>
+
+        <div class="lesson-prose">
+          <h2>6. The near-misses: direct fifths, crossing, overlap</h2>
+          <p>
+            Three subtler faults round out the list. They matter most between the
+            <strong>outer voices</strong> (Soprano and Bass), the pair the ear
+            tracks most closely.
+          </p>
+          <ul>
+            <li>
+              <strong>Direct (hidden) fifths and octaves.</strong> Even without a
+              true parallel, arriving at a perfect fifth or octave by
+              <em>similar</em> motion in the outer voices is weak — the ear hears
+              the approaching parallel. The usual licence: it is acceptable if
+              the soprano moves by step into the perfect interval.
+            </li>
+            <li>
+              <strong>Voice crossing.</strong> Don&rsquo;t let a lower voice rise
+              <em>above</em> the voice that should be over it (e.g. the alto going
+              higher than the soprano). The listener loses track of which line is
+              which.
+            </li>
+            <li>
+              <strong>Voice overlap.</strong> Don&rsquo;t let a voice move past
+              where its neighbour just was — e.g. the alto leaping above the note
+              the soprano held a beat ago. Like crossing, it muddies the
+              independence of the parts.
+            </li>
+          </ul>
+          <div class="callout tip">
+            <span class="callout-label">A working order of operations</span>
+            <p>
+              When you realise a progression: (1) write the bass from the Roman
+              numerals; (2) write the soprano as a singable melody; (3) fill alto
+              and tenor, holding common tones and moving by the smallest steps;
+              (4) <em>then</em> check every adjacent pair of chords for parallel
+              fifths and octaves, and the outer voices for direct fifths/octaves.
+              Doubling and spacing fall out almost automatically if you keep the
+              inner voices lazy.
+            </p>
+          </div>
+        </div>
+
+        <section class="exercise" aria-label="Exercises">
+          <h4>Exercises — tick them off as you do them</h4>
+          <label>
+            <input type="checkbox" class="check" data-lesson="13-satb-voice-leading" data-ex="ex1" />
+            <span
+              >Label every voice of the section&nbsp;1 I&ndash;IV&ndash;V&ndash;I
+              score by name and pitch (S, A, T, B), and mark which chord tone
+              (root / 3rd / 5th) each voice has in every chord.</span
+            >
+          </label>
+          <label>
+            <input type="checkbox" class="check" data-lesson="13-satb-voice-leading" data-ex="ex2" />
+            <span
+              >In that same score, find the doubled note in each chord and confirm
+              it is always the root. Confirm the leading tone (B) appears in
+              exactly one voice.</span
+            >
+          </label>
+          <label>
+            <input type="checkbox" class="check" data-lesson="13-satb-voice-leading" data-ex="ex3" />
+            <span
+              >For each chord of the score, measure the Soprano&ndash;Alto and
+              Alto&ndash;Tenor distances and verify neither exceeds an octave.
+              State whether each chord is close or open structure.</span
+            >
+          </label>
+          <label>
+            <input type="checkbox" class="check" data-lesson="13-satb-voice-leading" data-ex="ex4" />
+            <span
+              >In the WRONG score, trace the Tenor and Bass and prove the parallel
+              fifth (name both intervals and the direction). Then explain in one
+              sentence what the corrected score did to remove it.</span
+            >
+          </label>
+          <label>
+            <input type="checkbox" class="check" data-lesson="13-satb-voice-leading" data-ex="ex5" />
+            <span
+              >Realise a I&ndash;V&ndash;I in G major in four voices on paper:
+              double the root, keep common tones, resolve the leading tone (F&sharp;)
+              up to G, and check every voice pair for parallel fifths and
+              octaves.</span
+            >
+          </label>
+
+          <div class="lesson-complete-row">
+            <label>
+              <input
+                type="checkbox"
+                class="check lesson-complete"
+                data-lesson="13-satb-voice-leading"
+                data-lesson-complete
+              />
+              <span>Mark this lesson complete</span>
+            </label>
+          </div>
+        </section>
+
+        <div class="lesson-prose">
+          <h2>Keep going — verified resources</h2>
+          <p>
+            A short, hand-checked set for four-part writing. The video needs an
+            internet connection; everything else (and all the notation above)
+            works offline.
+          </p>
+        </div>
+
+        <div class="video-embed">
+          <iframe
+            src="https://www.youtube.com/embed/UkatcvIuF4U"
+            title="How To Arrange Chords into BEAUTIFUL 4-PART HARMONIES — Signals Music Studio"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <ul class="resources">
+          <li>
+            <span class="chip article">Article</span>
+            <a
+              href="https://viva.pressbooks.pub/openmusictheory/chapter/chords-in-satb-style/"
+              target="_blank"
+              rel="noopener"
+              >Open Music Theory — Chords in SATB style</a
+            >
+            <span>The six rules: stem direction, ranges, spacing, voice crossing, doubling.</span>
+          </li>
+          <li>
+            <span class="chip article">Article</span>
+            <a
+              href="https://milnepublishing.geneseo.edu/fundamentals-function-form-workbook/front-matter/guide-to-satb-part-writing/"
+              target="_blank"
+              rel="noopener"
+              >Geneseo (Milne) — Guide to SATB part-writing</a
+            >
+            <span>Concise reference for ranges, doubling, tendency tones, and forbidden parallels.</span>
+          </li>
+          <li>
+            <span class="chip article">Article</span>
+            <a
+              href="https://rwu.pressbooks.pub/musictheory/chapter/spacing-voicing-and-doubling-of-chord-tones-in-satb-style/"
+              target="_blank"
+              rel="noopener"
+              >Composing Music — Spacing, voicing &amp; doubling in SATB</a
+            >
+            <span>Close vs. open structure and the octave-spacing rule, worked out.</span>
+          </li>
+          <li>
+            <span class="chip article">Article</span>
+            <a href="https://en.wikipedia.org/wiki/Consecutive_fifths" target="_blank" rel="noopener"
+              >Wikipedia — Consecutive fifths</a
+            >
+            <span>Definition and the voice-independence reasoning for the parallel-fifths ban.</span>
+          </li>
+          <li>
+            <span class="chip trainer">Trainer</span>
+            <a href="https://www.musictheory.net/exercises/keyboard-reverse" target="_blank" rel="noopener"
+              >musictheory.net — Note construction drill</a
+            >
+            <span>Build the exact pitches a voicing calls for, fast — the skill behind part-writing.</span>
+          </li>
+          <li>
+            <span class="chip video">Video</span>
+            <a href="https://www.youtube.com/watch?v=UkatcvIuF4U" target="_blank" rel="noopener"
+              >Signals Music Studio — Arranging chords into 4-part harmonies</a
+            >
+            <span>A practical, ear-first walk through four-part voicing (embedded above).</span>
+          </li>
+          <li>
+            <span class="chip video">Video</span>
+            <a href="https://www.youtube.com/watch?v=GoUQ_WHCe48" target="_blank" rel="noopener"
+              >Music Matters — A Beginner&rsquo;s Guide to Four-Part Harmony</a
+            >
+            <span>Ranges, layout and the core rules explained from scratch.</span>
+          </li>
+        </ul>
+
+        <nav class="lesson-nav" aria-label="Lesson navigation">
+          <a class="nav-prev" href="12-diatonic-harmony-roman-numerals.html"
+            >← 12 · Diatonic harmony &amp; Roman numerals</a
+          >
+          <a class="nav-hub" href="../../index.html">All lessons</a>
+          <span class="nav-next nav-disabled">14 · Cadences &amp; phrase structure (coming soon) →</span>
+        </nav>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>
+          Musicianship — a framework-free, offline-friendly music-learning suite.
+          Notation rendered with the vendored abcjs library. Theory in this
+          lesson is cross-checked against Open Music Theory, the Geneseo (Milne)
+          part-writing guide, and Wikipedia.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Shared scripts, fixed load order (plain scripts, not modules) -->
+    <script src="../../assets/vendor/abcjs/abcjs-basic-min.js"></script>
+    <script src="../../assets/js/notation.js"></script>
+    <script src="../../assets/js/fretboard.js"></script>
+    <script src="../../assets/js/keyboard.js"></script>
+    <script src="../../assets/js/progress.js"></script>
+  </body>
+</html>

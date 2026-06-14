@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Triads — Musicianship · Theory Core</title>
+    <meta
+      name="description"
+      content="The triad — three notes stacked in thirds. The four qualities (major, minor, diminished, augmented) by their interval stacks, root position and inversions, and figured bass (5/3, 6, 6/4) — shown on the staff, the keyboard, and the fretboard."
+    />
+    <link rel="stylesheet" href="../../assets/css/site.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap">
+        <p class="crumbs">
+          <a href="../../index.html">Musicianship</a>
+          <span class="sep">/</span>
+          <a href="../../index.html">Theory Core</a>
+          <span class="sep">/</span>
+          Triads
+        </p>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <article class="lesson">
+        <div class="lesson-header">
+          <span class="track-tag">Theory Core · Lesson 10</span>
+          <h1>Triads</h1>
+          <p class="lesson-prose">
+            A <strong>triad</strong> is the smallest complete chord: three notes
+            stacked in thirds. It is where the lessons on intervals and scales
+            cash out — almost every chord you will ever play is a triad, or a
+            triad with notes added on top. Here we build the four
+            <em>qualities</em>, turn each one upside down through its
+            <em>inversions</em>, and learn the shorthand —
+            <strong>figured bass</strong> — that classical musicians use to name
+            which note is in the bass.
+          </p>
+          <ul class="outcomes">
+            <li>Build a triad as root + third + fifth, stacked in thirds.</li>
+            <li>Spell and hear all four qualities: major, minor, diminished, augmented.</li>
+            <li>Know <em>why</em> the third sets the colour and the fifth sets the tension.</li>
+            <li>Put any chord member in the bass: root position, 1st and 2nd inversion.</li>
+            <li>Read and write the figured bass for triads: 5/3, 6, and 6/4.</li>
+          </ul>
+        </div>
+
+        <aside class="prereqs">
+          <h4>Before this lesson</h4>
+          <ul>
+            <li>
+              <a href="05-intervals.html">Lesson 5 — Intervals</a>: number +
+              quality, and especially the major vs. minor third and the perfect
+              fifth. Triads are built entirely from thirds, so that lesson is the
+              toolkit for this one.
+            </li>
+            <li>
+              <a href="06-major-scale-circle-of-fifths.html"
+                >Lesson 6 — The major scale &amp; circle of fifths</a
+              >: we spell triads with letter names and accidentals drawn from
+              scales.
+            </li>
+          </ul>
+        </aside>
+
+        <div class="lesson-prose">
+          <h2>1. What a triad is: thirds stacked</h2>
+          <p>
+            Take a note — the <strong>root</strong>. Stack a third above it — the
+            <strong>third</strong>. Stack another third above that — the
+            <strong>fifth</strong>. Three notes, two stacked thirds, and the
+            outer span from root to fifth is some kind of fifth. That is a triad.
+            Built on C, the plainest triad is C&ndash;E&ndash;G.
+          </p>
+          <p>
+            The names <em>root</em>, <em>third</em>, and <em>fifth</em> are just
+            the interval of each note measured up from the root (a 3rd above, a
+            5th above). They stay attached to those notes no matter how you later
+            rearrange the chord — that is the idea that makes inversions in
+            section&nbsp;3 work.
+          </p>
+        </div>
+
+        <figure class="score">
+          <script type="text/abc">
+X:1
+T:A triad is a stack of thirds
+M:4/4
+L:1/4
+K:C
+"root"C "3rd"E "5th"G z | "C major"[CEG]4 |]
+          </script>
+          <figcaption>
+            C (root), E (third), G (fifth) laid out one at a time, then sounded
+            together as a C-major triad. Two stacked thirds; the outer interval
+            is a fifth.
+          </figcaption>
+        </figure>
+
+        <div class="diagram"
+          data-keyboard='{"octaves":1,"startNote":"C","startOctave":4,"showLabels":true,"highlight":[{"note":"C4","label":"R"},{"note":"E4","label":"3"},{"note":"G4","label":"5"}]}'>
+        </div>
+        <p class="lesson-prose">
+          <small
+            >The same C-major triad on the keyboard: C is the root, E the third,
+            G the fifth. Notice the gaps — root to third skips D, third to fifth
+            skips F. Every triad has this &ldquo;every-other-key&rdquo; look when
+            it is packed into one octave.</small
+          >
+        </p>
+
+        <div class="lesson-prose">
+          <h2>2. The four qualities</h2>
+          <p>
+            The two thirds can each be major (M3, 4 half steps) or minor (m3, 3
+            half steps), and the choice of <em>each</em> third gives four
+            combinations — the four triad <strong>qualities</strong>. Built on C
+            they are:
+          </p>
+          <table>
+            <thead>
+              <tr>
+                <th>Quality</th>
+                <th>Lower third</th>
+                <th>Upper third</th>
+                <th>Root&rarr;5th</th>
+                <th>On C</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Major</strong></td>
+                <td>M3</td>
+                <td>m3</td>
+                <td>Perfect 5th</td>
+                <td>C&ndash;E&ndash;G</td>
+              </tr>
+              <tr>
+                <td><strong>minor</strong></td>
+                <td>m3</td>
+                <td>M3</td>
+                <td>Perfect 5th</td>
+                <td>C&ndash;E&flat;&ndash;G</td>
+              </tr>
+              <tr>
+                <td><strong>diminished</strong></td>
+                <td>m3</td>
+                <td>m3</td>
+                <td>diminished 5th</td>
+                <td>C&ndash;E&flat;&ndash;G&flat;</td>
+              </tr>
+              <tr>
+                <td><strong>augmented</strong></td>
+                <td>M3</td>
+                <td>M3</td>
+                <td>Augmented 5th</td>
+                <td>C&ndash;E&ndash;G&sharp;</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>
+            Read the pattern: <strong>major</strong> is &ldquo;big-then-small&rdquo;
+            (M3 + m3), <strong>minor</strong> is &ldquo;small-then-big&rdquo;
+            (m3 + M3); both keep a perfect fifth. <strong>diminished</strong> is
+            two small thirds (m3 + m3), which squeezes the outer interval down to
+            a diminished fifth; <strong>augmented</strong> is two big thirds
+            (M3 + M3), which stretches it up to an augmented fifth.
+          </p>
+          <div class="callout why">
+            <span class="callout-label">Why the third sets the colour, the fifth sets the tension</span>
+            <p>
+              The <em>quality of the lower third</em> alone decides
+              major-vs-minor — the bright/dark colour the ear hears instantly.
+              That is why &ldquo;major&rdquo; and &ldquo;minor&rdquo; both keep a
+              perfect fifth: they differ <em>only</em> in that one third (E
+              vs.&nbsp;E&flat;). The <em>fifth</em> is a separate matter: a
+              perfect fifth is consonant and stable, so major and minor triads
+              sound settled. Shrink or stretch the fifth to a diminished or
+              augmented fifth — both dissonant intervals (see Lesson 5) — and the
+              triad itself becomes unstable and wants to resolve. So the third
+              colours the chord; the fifth tells you whether it can stand still.
+            </p>
+          </div>
+          <p>
+            Here are all four on the staff. They share the same root and the same
+            letter names (C&ndash;E&ndash;G) — only the accidentals on the third
+            and fifth change.
+          </p>
+        </div>
+
+        <figure class="score">
+          <script type="text/abc">
+X:1
+T:The four triad qualities on C
+M:4/4
+L:1/4
+K:C
+"C major"[CEG] "C minor"[C_EG] "C dim"[C_E_G] "C aug"[CE^G] |]
+          </script>
+          <figcaption>
+            C major [C&ndash;E&ndash;G], C minor [C&ndash;E&flat;&ndash;G], C
+            diminished [C&ndash;E&flat;&ndash;G&flat;], C augmented
+            [C&ndash;E&ndash;G&sharp;]. The root stays put; the third moves for
+            colour, the fifth moves for tension.
+          </figcaption>
+        </figure>
+
+        <div class="lesson-prose">
+          <p>
+            On the keyboard the one-half-step moves are easy to see. In each
+            diagram below the root C never moves; watch only the third and the
+            fifth slide.
+          </p>
+        </div>
+
+        <div class="both-instruments">
+          <div class="instrument">
+            <h4>Major — C E G</h4>
+            <div class="diagram"
+              data-keyboard='{"octaves":1,"startNote":"C","startOctave":4,"showLabels":true,"highlight":[{"note":"C4","label":"R"},{"note":"E4","label":"3"},{"note":"G4","label":"5"}]}'>
+            </div>
+            <p><small>M3 + m3; perfect fifth. Bright and stable.</small></p>
+          </div>
+          <div class="instrument">
+            <h4>minor — C E&flat; G</h4>
+            <div class="diagram"
+              data-keyboard='{"octaves":1,"startNote":"C","startOctave":4,"showLabels":true,"highlight":[{"note":"C4","label":"R"},{"note":"Eb4","label":"♭3"},{"note":"G4","label":"5"}]}'>
+            </div>
+            <p><small>The third drops to E&flat; (m3 + M3); fifth still perfect. Dark but stable.</small></p>
+          </div>
+        </div>
+        <div class="both-instruments">
+          <div class="instrument">
+            <h4>diminished — C E&flat; G&flat;</h4>
+            <div class="diagram"
+              data-keyboard='{"octaves":1,"startNote":"C","startOctave":4,"showLabels":true,"highlight":[{"note":"C4","label":"R"},{"note":"Eb4","label":"♭3"},{"note":"Gb4","label":"♭5"}]}'>
+            </div>
+            <p><small>Both thirds minor; the fifth drops to G&flat; (a diminished fifth, the tritone). Tense, wants to resolve.</small></p>
+          </div>
+          <div class="instrument">
+            <h4>augmented — C E G&sharp;</h4>
+            <div class="diagram"
+              data-keyboard='{"octaves":1,"startNote":"C","startOctave":4,"showLabels":true,"highlight":[{"note":"C4","label":"R"},{"note":"E4","label":"3"},{"note":"G#4","label":"♯5"}]}'>
+            </div>
+            <p><small>Both thirds major; the fifth rises to G&sharp; (an augmented fifth). Tense and restless.</small></p>
+          </div>
+        </div>
+
+        <div class="lesson-prose">
+          <h2>3. Inversions: which note is in the bass</h2>
+          <p>
+            So far the root has been the lowest note. But a triad is the same
+            chord — same three pitch classes, same name — no matter which member
+            you put at the bottom. The lowest sounding note is the
+            <strong>bass</strong>, and which chord member sits there names the
+            <strong>inversion</strong>:
+          </p>
+          <ul>
+            <li>
+              <strong>Root position</strong> — the <em>root</em> is in the bass
+              (C&ndash;E&ndash;G with C lowest).
+            </li>
+            <li>
+              <strong>First inversion</strong> — the <em>third</em> is in the bass
+              (E&ndash;G&ndash;C with E lowest).
+            </li>
+            <li>
+              <strong>Second inversion</strong> — the <em>fifth</em> is in the
+              bass (G&ndash;C&ndash;E with G lowest).
+            </li>
+          </ul>
+          <p>
+            To invert, move the bottom note up an octave; the remaining notes
+            re-stack above the new bass. It is still a C-major triad each time —
+            only the bass, and so the chord&rsquo;s flavour and function, change.
+          </p>
+        </div>
+
+        <figure class="score">
+          <script type="text/abc">
+X:1
+T:C major triad — root, first, and second inversion
+M:3/4
+L:1/4
+K:C
+"root pos."[CEG] "1st inv."[EGc] "2nd inv."[Gce] |]
+          </script>
+          <figcaption>
+            The same C-major triad three ways: root in bass [C&ndash;E&ndash;G],
+            third in bass [E&ndash;G&ndash;C], fifth in bass
+            [G&ndash;C&ndash;E]. Same chord, different bass note.
+          </figcaption>
+        </figure>
+
+        <div class="callout tip">
+          <span class="callout-label">Naming an inverted chord you find in the wild</span>
+          <p>
+            Re-stack the notes into thirds (the &ldquo;snowman&rdquo; shape) to
+            find the root. Given G&ndash;C&ndash;E, the only way they stack in
+            thirds is C&ndash;E&ndash;G — so the root is C and the chord is C
+            major, here with its fifth (G) in the bass: second inversion. The
+            root is <em>not</em> the lowest note; it is the bottom of the
+            stacked-thirds form.
+          </p>
+        </div>
+
+        <div class="lesson-prose">
+          <p>
+            A quick word on spacing. When all three notes are packed into the
+            smallest space (within an octave, as above) the voicing is
+            <strong>close</strong>; when they are spread out over more than an
+            octave — common when the chord is shared between two hands or several
+            instruments — the voicing is <strong>open</strong>. Spacing does not
+            change the chord&rsquo;s name or inversion, only its sound and feel.
+          </p>
+        </div>
+
+        <div class="lesson-prose">
+          <h2>4. Figured bass for triads</h2>
+          <p>
+            <strong>Figured bass</strong> is a centuries-old shorthand: write the
+            bass note, then stack numbers under or over it for the
+            <em>intervals above the bass</em> that complete the chord. For
+            triads, only three figures matter, one per inversion:
+          </p>
+          <table>
+            <thead>
+              <tr>
+                <th>Inversion</th>
+                <th>Bass note</th>
+                <th>Intervals above bass</th>
+                <th>Full figure</th>
+                <th>Usual shorthand</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Root position</td>
+                <td>root</td>
+                <td>a 3rd and a 5th</td>
+                <td>5/3</td>
+                <td><strong>(none)</strong> — left unfigured</td>
+              </tr>
+              <tr>
+                <td>First inversion</td>
+                <td>third</td>
+                <td>a 3rd and a 6th</td>
+                <td>6/3</td>
+                <td><strong>6</strong></td>
+              </tr>
+              <tr>
+                <td>Second inversion</td>
+                <td>fifth</td>
+                <td>a 4th and a 6th</td>
+                <td>6/4</td>
+                <td><strong>6/4</strong></td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="callout why">
+            <span class="callout-label">Why these particular numbers — and why the abbreviations</span>
+            <p>
+              The figures are literally the interval sizes measured up from the
+              bass. In <strong>root position</strong>, the third and fifth sit a
+              3rd and a 5th above the bass — that is 5/3. Because a plain
+              root-position triad is overwhelmingly the default, players leave it
+              <em>unfigured</em>: no number means &ldquo;5/3.&rdquo; In
+              <strong>first inversion</strong> the third is in the bass, so the
+              other two notes lie a 3rd and a 6th above it — 6/3 — and since the
+              6 is the telling interval, it is shortened to just
+              <strong>6</strong>. In <strong>second inversion</strong> the fifth
+              is in the bass; the others lie a 4th and a 6th above — 6/4 — and
+              this one keeps both digits, because dropping to a bare
+              &ldquo;6&rdquo; would collide with first inversion. So the rule is:
+              omit what is predictable, keep what disambiguates.
+            </p>
+          </div>
+          <p>
+            You will say these out loud all the time: a &ldquo;<strong>six-three</strong>&rdquo;
+            (or just &ldquo;six&rdquo;) chord is in first inversion; a
+            &ldquo;<strong>six-four</strong>&rdquo; chord is in second inversion.
+            We meet figured bass again — combined with Roman numerals — in
+            <a href="12-diatonic-harmony-roman-numerals.html"
+              >Lesson 12 (diatonic harmony)</a
+            >, and the figures grow a fourth member for seventh chords in
+            <a href="11-seventh-chords.html">Lesson 11</a>.
+          </p>
+        </div>
+
+        <figure class="score">
+          <script type="text/abc">
+X:1
+T:Figured bass — the same triad, three inversions
+M:3/4
+L:1/4
+K:C
+"5/3"[CEG] "6"[EGc] "6/4"[Gce] |]
+          </script>
+          <figcaption>
+            Root position is figured 5/3 (usually left blank), first inversion
+            6 (short for 6/3), second inversion 6/4 — the numbers count the
+            intervals above the bass.
+          </figcaption>
+        </figure>
+
+        <div class="lesson-prose">
+          <h2>5. The C major triad on the guitar</h2>
+          <p>
+            The open C chord every guitarist learns first is just a C-major triad
+            — C, E, and G — voiced across the strings. It is in root position
+            because the lowest sounding note (the A string, 3rd fret) is C, the
+            root. Reading the strings high to low: the open high E and the open G
+            string supply the chord&rsquo;s third (E) and fifth (G); the rest
+            spell C and E.
+          </p>
+        </div>
+
+        <div class="both-instruments">
+          <div class="instrument">
+            <h4>Open C major (x32010)</h4>
+            <div class="diagram"
+              data-fretboard='{"frets":[0,3],"open":[3,1],"muted":[6],"dots":[{"string":5,"fret":3,"label":"R"},{"string":4,"fret":2,"label":"3"},{"string":2,"fret":1,"label":"R"}]}'>
+            </div>
+            <p>
+              <small
+                >Low E (6th string) is muted; A string (5) fret 3 = C, the root
+                (lowest note, so root position); D string (4) fret 2 = E, the
+                third; G string (3) is open = G, the fifth; B string (2) fret 1 =
+                C; high E (1) is open = E. Three pitch classes, C&ndash;E&ndash;G,
+                doubled across six strings.</small
+              >
+            </p>
+          </div>
+          <div class="instrument">
+            <h4>The same chord, named on the keyboard</h4>
+            <div class="diagram"
+              data-keyboard='{"octaves":1,"startNote":"C","startOctave":4,"showLabels":true,"highlight":[{"note":"C4","label":"R"},{"note":"E4","label":"3"},{"note":"G4","label":"5"}]}'>
+            </div>
+            <p>
+              <small
+                >Strip the guitar voicing down to its three distinct notes and
+                you are back at C&ndash;E&ndash;G — the plain major triad from
+                section&nbsp;1.</small
+              >
+            </p>
+          </div>
+        </div>
+
+        <section class="exercise" aria-label="Exercises">
+          <h4>Exercises — tick them off as you do them</h4>
+          <label>
+            <input type="checkbox" class="check" data-lesson="10-triads" data-ex="ex1" />
+            <span
+              >Build all four triad qualities on C from scratch, naming each third
+              as you stack it (M3/m3), then play them in order on your instrument
+              and listen for the colour-then-tension change.</span
+            >
+          </label>
+          <label>
+            <input type="checkbox" class="check" data-lesson="10-triads" data-ex="ex2" />
+            <span
+              >Spell the major triad on each of G, D, F, and A. (Answers:
+              G&ndash;B&ndash;D, D&ndash;F&sharp;&ndash;A, F&ndash;A&ndash;C,
+              A&ndash;C&sharp;&ndash;E.)</span
+            >
+          </label>
+          <label>
+            <input type="checkbox" class="check" data-lesson="10-triads" data-ex="ex3" />
+            <span
+              >Name the quality of each: D&ndash;F&ndash;A, E&ndash;G&sharp;&ndash;B,
+              B&ndash;D&ndash;F, F&ndash;A&ndash;C&sharp;. (Answers: minor, major,
+              diminished, augmented.)</span
+            >
+          </label>
+          <label>
+            <input type="checkbox" class="check" data-lesson="10-triads" data-ex="ex4" />
+            <span
+              >Identify the root and inversion of each by re-stacking into thirds:
+              E&ndash;G&ndash;C, A&ndash;C&ndash;F, G&ndash;C&ndash;E.
+              (Answers: C major 1st inversion; F major 1st inversion; C major 2nd
+              inversion.)</span
+            >
+          </label>
+          <label>
+            <input type="checkbox" class="check" data-lesson="10-triads" data-ex="ex5" />
+            <span
+              >Give the figured-bass shorthand for each inversion above (root =
+              blank/5/3, first = 6, second = 6/4), then drill the teoria triad
+              construction and identification trainers below.</span
+            >
+          </label>
+
+          <div class="lesson-complete-row">
+            <label>
+              <input
+                type="checkbox"
+                class="check lesson-complete"
+                data-lesson="10-triads"
+                data-lesson-complete
+              />
+              <span>Mark this lesson complete</span>
+            </label>
+          </div>
+        </section>
+
+        <div class="lesson-prose">
+          <h2>Keep going — verified resources</h2>
+          <p>
+            A short, hand-checked set for triads and figured bass. The video needs
+            an internet connection; everything else (and all the notation above)
+            works offline.
+          </p>
+        </div>
+
+        <div class="video-embed">
+          <iframe
+            src="https://www.youtube.com/embed/4U6hwyuEFV4"
+            title="Music Theory: Building Triads (Major, Minor, Diminished, Augmented) — Scott Watson"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <ul class="resources">
+          <li>
+            <span class="chip article">Article</span>
+            <a
+              href="https://viva.pressbooks.pub/openmusictheory/chapter/triads/"
+              target="_blank"
+              rel="noopener"
+              >Open Music Theory — Triads</a
+            >
+            <span>College-level chapter on the four qualities and how to identify them.</span>
+          </li>
+          <li>
+            <span class="chip article">Article</span>
+            <a
+              href="https://viva.pressbooks.pub/openmusictheory/chapter/inversion-and-figured-bass/"
+              target="_blank"
+              rel="noopener"
+              >Open Music Theory — Inversion and Figured Bass</a
+            >
+            <span>Why 5/3, 6 (6/3), and 6/4 mean what they mean, with realised examples.</span>
+          </li>
+          <li>
+            <span class="chip article">Article</span>
+            <a href="https://www.musictheory.net/lessons/40" target="_blank" rel="noopener"
+              >musictheory.net — Introduction to Chords (Lesson 40)</a
+            >
+            <span>Triad construction and the four qualities, animated on the staff.</span>
+          </li>
+          <li>
+            <span class="chip article">Article</span>
+            <a
+              href="https://www.teoria.com/en/reference/t/triad.php"
+              target="_blank"
+              rel="noopener"
+              >teoria.com — Triad reference</a
+            >
+            <span>Concise reference card: the interval recipe for each triad quality.</span>
+          </li>
+          <li>
+            <span class="chip trainer">Trainer</span>
+            <a href="https://www.teoria.com/en/exercises/c3c.php" target="_blank" rel="noopener"
+              >teoria.com — Triad Construction</a
+            >
+            <span>Build a named triad on the staff — pick qualities and inversions to drill.</span>
+          </li>
+          <li>
+            <span class="chip trainer">Trainer</span>
+            <a href="https://www.teoria.com/en/exercises/c3i.php" target="_blank" rel="noopener"
+              >teoria.com — Triad Identification</a
+            >
+            <span>See a chord, name its root, quality, and inversion. The core skill.</span>
+          </li>
+          <li>
+            <span class="chip video">Video</span>
+            <a href="https://www.youtube.com/watch?v=4U6hwyuEFV4" target="_blank" rel="noopener"
+              >Scott Watson — Building Triads (Major, Minor, Diminished, Augmented)</a
+            >
+            <span>A clear from-scratch walk-through of the four qualities (embedded above).</span>
+          </li>
+        </ul>
+
+        <nav class="lesson-nav" aria-label="Lesson navigation">
+          <a class="nav-prev" href="09-solfege-sight-singing.html"
+            >← 09 · Solfège &amp; sight-singing</a
+          >
+          <a class="nav-hub" href="../../index.html">All lessons</a>
+          <a class="nav-next" href="11-seventh-chords.html"
+            >11 · Seventh chords →</a
+          >
+        </nav>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>
+          Musicianship — a framework-free, offline-friendly music-learning suite.
+          Notation rendered with the vendored abcjs library. Theory in this
+          lesson is cross-checked against Open Music Theory, musictheory.net, and
+          teoria.com.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Shared scripts, fixed load order (plain scripts, not modules) -->
+    <script src="../../assets/vendor/abcjs/abcjs-basic-min.js"></script>
+    <script src="../../assets/js/notation.js"></script>
+    <script src="../../assets/js/fretboard.js"></script>
+    <script src="../../assets/js/keyboard.js"></script>
+    <script src="../../assets/js/progress.js"></script>
+  </body>
+</html>
