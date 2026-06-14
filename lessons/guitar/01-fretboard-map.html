@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The fretboard as a map — Musicianship · Guitar Application</title>
+    <meta
+      name="description"
+      content="Make the whole guitar neck legible: how the six strings and frets lay the chromatic scale on a grid, finding the natural notes on the low-E and A anchor strings, and the octave shapes — including why the B string breaks the pattern by one fret."
+    />
+    <link rel="stylesheet" href="../../assets/css/site.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap">
+        <p class="crumbs">
+          <a href="../../index.html">Musicianship</a>
+          <span class="sep">/</span>
+          <a href="../../index.html">Guitar Application</a>
+          <span class="sep">/</span>
+          The fretboard as a map
+        </p>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <article class="lesson">
+        <div class="lesson-header">
+          <span class="track-tag">Guitar Application · Lesson 1</span>
+          <h1>The fretboard as a map</h1>
+          <p class="lesson-prose">
+            The guitar neck looks like a thicket of dots and lines, but it is
+            laid out with total regularity: six strings, each fret a single half
+            step, the whole thing just the <strong>chromatic scale printed on a
+            grid</strong>. Learn how that grid is built and you stop memorising
+            72 unrelated note positions and start <em>deriving</em> them. This
+            lesson hands you the map — the anchor strings, the octave shapes, and
+            the one quirk (the B string) that trips everyone up — so the rest of
+            the neck becomes legible.
+          </p>
+          <ul class="outcomes">
+            <li>Read the neck's layout: six strings E-A-D-G-B-E, one fret = one half step.</li>
+            <li>Find any natural note on the low-E and A strings without counting from the nut every time.</li>
+            <li>Use the &ldquo;+2 frets, +2 strings&rdquo; octave shape to copy a note all over the neck.</li>
+            <li>Know <em>why</em> the B string shifts the shape by one fret — and adjust automatically.</li>
+            <li>See the fretboard as one chromatic scale repeated, so one known string derives the rest.</li>
+          </ul>
+        </div>
+
+        <aside class="prereqs">
+          <h4>Before this lesson</h4>
+          <ul>
+            <li>
+              <a href="../theory/01-pitch-chromatic.html">Theory&nbsp;1 — Pitch &amp; the chromatic system</a>
+              — the 12 notes, half and whole steps, where the natural half steps (B-C, E-F) fall.
+            </li>
+            <li>
+              <a href="../theory/05-intervals.html">Theory&nbsp;5 — Intervals</a>
+              — measuring distance as number + quality; you'll need the octave, the perfect fourth, and the major third here.
+            </li>
+          </ul>
+        </aside>
+
+        <div class="lesson-prose">
+          <h2>1. The layout: strings, frets, and one octave to the 12th</h2>
+          <p>
+            In <strong>standard tuning</strong> the six open strings, from the
+            thickest (lowest in pitch) to the thinnest (highest), are
+            <strong>E&nbsp;A&nbsp;D&nbsp;G&nbsp;B&nbsp;E</strong>. We number them
+            the way guitarists do: the high E is <strong>string&nbsp;1</strong>
+            and the low E is <strong>string&nbsp;6</strong>. (The numbering runs
+            opposite to the pitch, which is its own small hurdle — string 1 is
+            the thinnest, highest-sounding string.)
+          </p>
+          <table>
+            <thead>
+              <tr>
+                <th>String</th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Open note</td>
+                <td>E (high)</td>
+                <td>B</td>
+                <td>G</td>
+                <td>D</td>
+                <td>A</td>
+                <td>E (low)</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>
+            Moving along a string toward the body, <strong>each fret raises the
+            pitch by one half step</strong> — the smallest step in Western music,
+            the same half step you met in
+            <a href="../theory/01-pitch-chromatic.html">Theory&nbsp;1</a>. Two
+            frets make a whole step. So a single string is nothing more than the
+            chromatic scale walking upward, one fret at a time.
+          </p>
+          <p>
+            Because an octave is 12 half steps
+            (<a href="../theory/05-intervals.html">Theory&nbsp;5</a>), the
+            <strong>12th fret is the octave of the open string</strong> — the
+            same letter name, one register higher — and from fret&nbsp;12 onward
+            the entire pattern of notes <strong>repeats</strong>. The neck
+            therefore holds only one octave of distinct positions per string;
+            learn frets&nbsp;0–12 and you have learned the whole string. That
+            doubled dot at the 12th fret on most guitars is marking exactly this
+            octave.
+          </p>
+        </div>
+
+        <figure class="score">
+          <script type="text/abc">
+X:1
+T:The open low E and its 12th-fret octave
+M:4/4
+L:1/2
+K:C clef=bass
+"open E (E2)"E,, "12th fret (E3)"E, |]
+          </script>
+          <figcaption>
+            The open low-E string (E2) and the same string stopped at the 12th
+            fret (E3) — one octave higher, written in the bass clef.
+          </figcaption>
+        </figure>
+
+        <div class="callout why">
+          <span class="callout-label">Why one fret is exactly one half step</span>
+          <p>
+            Guitar frets are placed so each one shortens the vibrating string by
+            the ratio that produces a half step (the twelfth root of two in
+            pitch). Twelve of those equal-tempered steps multiply back to a
+            doubling of frequency — a perfect octave — which is precisely why the
+            12th fret lands on the octave and the markings reset there. You don't
+            need the maths to play; you only need the consequence: <em>fret = half
+            step, 12 frets = octave, then repeat.</em>
+          </p>
+        </div>
+
+        <div class="lesson-prose">
+          <h2>2. The anchor strings: naturals on low E and A</h2>
+          <p>
+            You don't have to memorise all six strings cold. Two of them carry
+            most of the navigational load: the <strong>low-E (6th)</strong> and
+            <strong>A (5th)</strong> strings. These are the strings whose notes
+            name your <strong>barre-chord roots</strong> — the E-shape barre
+            takes its root from the low-E string, the A-shape barre from the A
+            string — so knowing their natural notes lets you put a chord
+            <em>anywhere</em>. Master these two and the rest of the neck follows
+            from the octave shapes in section&nbsp;3.
+          </p>
+          <p>
+            Start with the seven natural notes climbing the low-E string. Notice
+            the rhythm of the gaps: most natural notes are a whole step (two
+            frets) apart, but <strong>B&nbsp;up&nbsp;to&nbsp;C</strong> and
+            <strong>E&nbsp;up&nbsp;to&nbsp;F</strong> are only a half step (one
+            fret) apart — the two natural half steps you learned in
+            <a href="../theory/01-pitch-chromatic.html">Theory&nbsp;1</a>, now
+            visible as the two single-fret jumps on the string.
+          </p>
+        </div>
+
+        <div class="diagram"
+          data-fretboard='{"frets":[0,12],"open":[6],"dots":[{"string":6,"fret":1,"label":"F"},{"string":6,"fret":3,"label":"G"},{"string":6,"fret":5,"label":"A"},{"string":6,"fret":7,"label":"B"},{"string":6,"fret":8,"label":"C"},{"string":6,"fret":10,"label":"D"},{"string":6,"fret":12,"label":"E"}]}'>
+        </div>
+        <p class="lesson-prose">
+          <small
+            >Natural notes climbing the low-E string (the rightmost string here;
+            string&nbsp;6, the thickest). Open&nbsp;=&nbsp;E, then F(1), G(3),
+            A(5), B(7), C(8), D(10), and E again at the 12th fret. The two
+            one-fret hops — B&rarr;C (7&rarr;8) and E&rarr;F (open&rarr;1) — are
+            the natural half steps; every other gap is two frets.</small
+          >
+        </p>
+
+        <figure class="score">
+          <script type="text/abc">
+X:1
+T:Walking up the low E string, nut to 12th fret
+M:4/4
+L:1/4
+K:C clef=bass
+"E"E,, "F"F,, "G"G,, "A"A,, | "B"B,, "C"C, "D"D, "E"E, |]
+          </script>
+          <figcaption>
+            The same eight naturals as notation (bass clef): E2 F2 G2 A2 — B2 C3
+            D3 E3. The tight B-C and E-F spacing you see on the staff is the same
+            half step you see as a single fret on the neck.
+          </figcaption>
+        </figure>
+
+        <div class="lesson-prose">
+          <p>
+            The A string works identically — same letter sequence, same two
+            half-step gaps (B-C and E-F), just starting from A:
+          </p>
+          <table>
+            <thead>
+              <tr>
+                <th>A string (5th) fret</th>
+                <th>0</th><th>2</th><th>3</th><th>5</th><th>7</th><th>8</th><th>10</th><th>12</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Natural note</td>
+                <td>A</td><td>B</td><td>C</td><td>D</td><td>E</td><td>F</td><td>G</td><td>A</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>
+            Two useful checkpoints fall straight out of this: A-string fret&nbsp;5
+            is <strong>D</strong> (the same pitch as the open D string, which is
+            how you tune by ear), and A-string fret&nbsp;7 is <strong>E</strong>
+            (an octave above the open low E). The sharps and flats simply live in
+            the wider gaps — fret&nbsp;1 of the A string is A&sharp;/B&flat;, and
+            so on — but you can always locate them from the naturals you now know.
+          </p>
+        </div>
+
+        <div class="lesson-prose">
+          <h2>3. Octave shapes: copy a note across the neck</h2>
+          <p>
+            Here is the trick that turns two known strings into the whole
+            fretboard. Take any note on the <strong>low-E, A, D, or G</strong>
+            string and you find <strong>its octave by going up 2 frets and over
+            2 strings</strong> (toward the thinner strings). The shape is a small,
+            fixed L — same fingering everywhere on those four strings.
+          </p>
+          <p>
+            Example: A is on the low-E string at fret&nbsp;5. Go
+            <strong>+2 frets, +2 strings</strong> and you land on the D string at
+            fret&nbsp;7 — the A an octave higher. Same note name, instantly, with
+            no counting.
+          </p>
+        </div>
+
+        <div class="diagram"
+          data-fretboard='{"frets":[3,9],"dots":[{"string":6,"fret":5,"label":"A"},{"string":4,"fret":7,"label":"A"}]}'>
+        </div>
+        <p class="lesson-prose">
+          <small
+            >The &ldquo;+2 and +2&rdquo; octave: root A on the low-E string
+            (string&nbsp;6, fret&nbsp;5) and its octave A on the D string
+            (string&nbsp;4, fret&nbsp;7). The same shape moves anywhere on the
+            E/A/D/G strings — slide it to fret&nbsp;3 and it spells G&rarr;G,
+            slide it to fret&nbsp;8 and it spells C&rarr;C.</small
+          >
+        </p>
+
+        <div class="callout why">
+          <span class="callout-label">Why the shape is &ldquo;+2 and +2&rdquo;</span>
+          <p>
+            Each adjacent string in standard tuning is a <strong>perfect
+            fourth</strong> higher than the one below it (5 half steps —
+            <a href="../theory/05-intervals.html">Theory&nbsp;5</a>). Skip a
+            string and you stack two fourths: 5 + 5 = 10 half steps. An octave is
+            12, so you are 2 half steps <em>short</em> — and you make up exactly
+            those 2 half steps by moving 2 frets along the string. That is the
+            whole reason the shape is two-and-two: two fourths plus two frets
+            equals one octave.
+          </p>
+        </div>
+
+        <div class="lesson-prose">
+          <h2>4. Why the B string breaks the pattern</h2>
+          <p>
+            Standard tuning has one irregularity, and it is the single most
+            important thing to internalise about the neck. Every adjacent pair of
+            strings is a perfect fourth apart — <em>except</em> the
+            <strong>G string up to the B string</strong>, which is a
+            <strong>major third</strong> (only 4 half steps instead of 5). It is
+            the lone major-third gap in an otherwise all-fourths tuning.
+          </p>
+          <p>
+            The consequence: any shape that <strong>crosses from the G string
+            onto the B or high-E string shifts up one extra fret</strong> to keep
+            its sound. The +2/+2 octave becomes a <strong>+3 frets, +2 strings</strong>
+            shape whenever the higher note lands on the B or top-E string.
+          </p>
+        </div>
+
+        <div class="diagram"
+          data-fretboard='{"frets":[4,9],"dots":[{"string":4,"fret":5,"label":"G"},{"string":2,"fret":8,"label":"G"}]}'>
+        </div>
+        <p class="lesson-prose">
+          <small
+            >The B-string octave shape: root G on the D string (string&nbsp;4,
+            fret&nbsp;5) and its octave G on the B string (string&nbsp;2,
+            fret&nbsp;8). Because the octave crosses onto the B string, it sits
+            <em>three</em> frets up, not two — the extra fret pays for the
+            major-third gap below it.</small
+          >
+        </p>
+
+        <div class="callout why">
+          <span class="callout-label">Why one extra fret, exactly</span>
+          <p>
+            Walk the same maths as before but cross the G-B boundary. From the D
+            string, the next string up (G) is a fourth (5 half steps), and G up to
+            B is only a <strong>major third</strong> (4 half steps): 5 + 4 = 9 half
+            steps. To reach the 12 half steps of an octave you must add
+            <strong>3</strong> frets, not 2. The B string's major-third tuning eats
+            one half step of horizontal distance, so every shape that crosses it
+            must hand one fret back. Learn this single offset and the rest of the
+            neck's geometry — barre chords, scale boxes, arpeggios — stops
+            surprising you.
+          </p>
+        </div>
+
+        <div class="callout tip">
+          <span class="callout-label">Quick rule</span>
+          <p>
+            Counting strings from low to high — <strong>E A D G | B E</strong> —
+            put the imaginary line between G and B. Any shape staying on one side
+            keeps its frets. Any shape stepping <em>across</em> that line, toward
+            the thin strings, slides up one fret; stepping back across it, toward
+            the thick strings, slides down one fret.
+          </p>
+        </div>
+
+        <div class="lesson-prose">
+          <h2>5. The whole neck is one chromatic scale on a grid</h2>
+          <p>
+            Step back and the picture is simple. A string is the chromatic scale
+            laid end to end. The next string up is the <em>same</em> chromatic
+            scale, started a perfect fourth higher (a major third higher across
+            the B-string gap). Stack six of these offset copies and you have the
+            entire fretboard — a grid where the same pitch shows up in several
+            places, and where knowing <strong>one</strong> string lets you derive
+            every other by counting the tuning offset.
+          </p>
+          <p>
+            This is the engine behind everything that comes next on guitar:
+            barre chords are octave shapes wearing a chord, the CAGED system is
+            five views of this same grid, and reading standard notation on the
+            neck (next lesson) is just mapping the staff's pitches onto these
+            coordinates. You are not memorising the fretboard so much as learning
+            its one repeating rule and the one exception to it.
+          </p>
+        </div>
+
+        <section class="exercise" aria-label="Exercises">
+          <h4>Exercises — tick them off as you do them</h4>
+          <label>
+            <input type="checkbox" class="check" data-lesson="01-fretboard-map" data-ex="ex1" />
+            <span
+              >Say the open strings aloud, low to high (E A D G B E) and high to
+              low (E B G D A E), naming the string number for each. Do it until it
+              is automatic.</span
+            >
+          </label>
+          <label>
+            <input type="checkbox" class="check" data-lesson="01-fretboard-map" data-ex="ex2" />
+            <span
+              >On the low-E string, play and name the seven naturals up to the
+              12th fret: E(0) F(1) G(3) A(5) B(7) C(8) D(10) E(12). Then do the
+              same on the A string: A(0) B(2) C(3) D(5) E(7) F(8) G(10) A(12).
+              Notice the two one-fret hops each time.</span
+            >
+          </label>
+          <label>
+            <input type="checkbox" class="check" data-lesson="01-fretboard-map" data-ex="ex3" />
+            <span
+              >Pick any note on the low-E, A, D, or G string and find its octave
+              with the +2-frets/+2-strings shape. Check it by ear — both notes
+              should sound &ldquo;the same, higher.&rdquo;</span
+            >
+          </label>
+          <label>
+            <input type="checkbox" class="check" data-lesson="01-fretboard-map" data-ex="ex4" />
+            <span
+              >Now find an octave that lands on the B string (e.g. G on the D
+              string fret&nbsp;5 &rarr; G on the B string fret&nbsp;8). Confirm it
+              is <em>three</em> frets up, and say why (the G-B major third).</span
+            >
+          </label>
+          <label>
+            <input type="checkbox" class="check" data-lesson="01-fretboard-map" data-ex="ex5" />
+            <span
+              >Derivation drill: cover the A string and, using only the low-E
+              string plus the octave shape, work out the natural notes on the A
+              string. Uncover and check.</span
+            >
+          </label>
+
+          <div class="lesson-complete-row">
+            <label>
+              <input
+                type="checkbox"
+                class="check lesson-complete"
+                data-lesson="01-fretboard-map"
+                data-lesson-complete
+              />
+              <span>Mark this lesson complete</span>
+            </label>
+          </div>
+        </section>
+
+        <div class="lesson-prose">
+          <h2>Keep going — verified resources</h2>
+          <p>
+            A short, hand-checked set for mapping the neck. The video needs an
+            internet connection; the notation and diagrams above all work offline.
+          </p>
+        </div>
+
+        <div class="video-embed">
+          <iframe
+            src="https://www.youtube.com/embed/M6UAgi5nPyE"
+            title="Learn the notes on the fretboard — Use Octaves (JustinGuitar)"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <ul class="resources">
+          <li>
+            <span class="chip article">Article</span>
+            <a href="https://yousician.com/blog/guitar-string-notes" target="_blank" rel="noopener"
+              >Yousician — Guitar string notes: beginner's guide</a
+            >
+            <span>The six open strings and how to find notes up the neck.</span>
+          </li>
+          <li>
+            <span class="chip article">Article</span>
+            <a href="https://www.daddario.com/the-lesson-room/guitar/guitar-string-notes/" target="_blank" rel="noopener"
+              >D'Addario — Guitar string notes</a
+            >
+            <span>String names, octaves, and naming notes on the fretboard.</span>
+          </li>
+          <li>
+            <span class="chip article">Article</span>
+            <a href="https://en.wikipedia.org/wiki/Standard_tuning" target="_blank" rel="noopener"
+              >Wikipedia — Standard tuning</a
+            >
+            <span>The E-A-D-G-B-E tuning and its all-fourths-plus-one-third interval pattern.</span>
+          </li>
+          <li>
+            <span class="chip article">Article</span>
+            <a href="https://fretscience.com/2022/09/26/standard-tuning-geometry/" target="_blank" rel="noopener"
+              >Fret Science — The geometry of standard tuning</a
+            >
+            <span>Why patterns shift one fret across the G-B string boundary.</span>
+          </li>
+          <li>
+            <span class="chip trainer">Trainer</span>
+            <a href="https://chordly.com/tools/guitar-fretboard" target="_blank" rel="noopener"
+              >Chordly — Interactive fretboard chart</a
+            >
+            <span>Click any fret to see its note; drill the naturals on E and A.</span>
+          </li>
+          <li>
+            <span class="chip video">Video</span>
+            <a href="https://www.youtube.com/watch?v=M6UAgi5nPyE" target="_blank" rel="noopener"
+              >JustinGuitar — Learn the notes on the fretboard: use octaves</a
+            >
+            <span>The octave-shape method for naming notes everywhere (embedded above).</span>
+          </li>
+        </ul>
+
+        <nav class="lesson-nav" aria-label="Lesson navigation">
+          <span class="nav-prev nav-disabled">First guitar lesson</span>
+          <a class="nav-hub" href="../../index.html">All lessons</a>
+          <a class="nav-next" href="02-reading-on-guitar.html">02 · Reading music on guitar →</a>
+        </nav>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>
+          Musicianship — a framework-free, offline-friendly music-learning suite.
+          Notation rendered with the vendored abcjs library. Theory in this
+          lesson is cross-checked against Wikipedia (Standard tuning), Fret
+          Science, and standard guitar references.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Shared scripts, fixed load order (plain scripts, not modules) -->
+    <script src="../../assets/vendor/abcjs/abcjs-basic-min.js"></script>
+    <script src="../../assets/js/notation.js"></script>
+    <script src="../../assets/js/fretboard.js"></script>
+    <script src="../../assets/js/keyboard.js"></script>
+    <script src="../../assets/js/progress.js"></script>
+  </body>
+</html>

@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Building chords on the guitar — Musicianship · Guitar Application</title>
+    <meta
+      name="description"
+      content="Apply chord-construction theory to the neck: every chord shape is a fingering of root-3-5 (or root-3-5-7). Map chord tones onto a shape, build triads as small 3-string shapes with inversions, build seventh chords and extensions, and turn a lead-sheet symbol into a playable voicing."
+    />
+    <link rel="stylesheet" href="../../assets/css/site.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap">
+        <p class="crumbs">
+          <a href="../../index.html">Musicianship</a>
+          <span class="sep">/</span>
+          <a href="../../index.html">Guitar Application</a>
+          <span class="sep">/</span>
+          Building chords on the guitar
+        </p>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <article class="lesson">
+        <div class="lesson-header">
+          <span class="track-tag">Guitar Application · Lesson 6</span>
+          <h1>Building chords on the guitar</h1>
+          <p class="lesson-prose">
+            You already know what a chord <em>is</em> — the Theory Core built it
+            from the ground up. A triad is a root, a third and a fifth stacked in
+            thirds; a seventh chord adds one more third on top. This lesson does
+            something narrower and more useful: it takes that theory and pins it
+            to the fretboard. Once you see that <strong>every chord shape is just
+            a fingering of root&ndash;3&ndash;5</strong> (or root&ndash;3&ndash;5&ndash;7), the
+            grids stop being arbitrary finger-pictures and become something you
+            can read, alter, and rebuild anywhere on the neck.
+          </p>
+          <ul class="outcomes">
+            <li>Read any chord grid as a map of root, 3rd, 5th (and 7th) tones.</li>
+            <li>Play a triad as a compact three-string shape and move it through its inversions.</li>
+            <li>Build dominant-7th, major-7th and minor-7th barre chords from the E- and A-shapes.</li>
+            <li>Add a 7th or 9th to a shape by altering one tone — not learning a new chord.</li>
+            <li>Turn a lead-sheet symbol into a playable voicing, and know why one symbol has many.</li>
+          </ul>
+        </div>
+
+        <aside class="prereqs">
+          <h4>Before this lesson</h4>
+          <ul>
+            <li>
+              <a href="03-caged-system.html">Guitar Lesson 3 — The CAGED system</a>:
+              the five movable shapes and how the same chord appears in five
+              places on the neck. We lean on CAGED to locate roots.
+            </li>
+            <li>
+              <a href="../theory/10-triads.html">Theory Lesson 10 — Triads</a> and
+              <a href="../theory/11-seventh-chords.html">Lesson 11 — Seventh chords</a>:
+              the construction (root&ndash;3&ndash;5, the four triad qualities, the
+              seventh-chord types and inversions). We <em>apply</em> that here and
+              deliberately do not re-derive it — flip back if a quality is fuzzy.
+            </li>
+          </ul>
+        </aside>
+
+        <div class="lesson-prose">
+          <h2>1. Every shape is root&ndash;3&ndash;5 in disguise</h2>
+          <p>
+            On the staff a C major triad is three notes — C, E, G — stacked in
+            thirds. On the guitar those same three pitches get scattered across
+            the strings, sometimes doubled, sometimes in a different vertical
+            order, because the instrument is tuned in fourths (mostly) rather than
+            thirds. The notes don't change; only their <em>arrangement</em> does.
+          </p>
+        </div>
+
+        <figure class="score">
+          <script type="text/abc">
+X:1
+T:C major triad — the three pitches
+M:4/4
+L:1/4
+K:C
+"R"C "3"E "5"G z | "C major"[CEG]4 |]
+          </script>
+          <figcaption>
+            The bones of C major: root C, major third E, perfect fifth G — first
+            in turn, then stacked as the triad. (Built in Theory Lesson 10.)
+          </figcaption>
+        </figure>
+
+        <div class="lesson-prose">
+          <p>
+            Now the open C chord. It is fingered <strong>x&nbsp;3&nbsp;2&nbsp;0&nbsp;1&nbsp;0</strong>
+            (low to high). Read what each string actually sounds and you find the
+            very same three notes — C, E and G — with the root and third
+            <em>doubled</em> so all five sounding strings belong to the triad:
+          </p>
+        </div>
+
+        <div class="both-instruments">
+          <div class="instrument">
+            <h4>The open C chord, decoded</h4>
+            <div class="diagram"
+              data-fretboard='{"frets":[0,3],"muted":[6],"open":[3,1],"dots":[{"string":5,"fret":3,"label":"R"},{"string":4,"fret":2,"label":"3"},{"string":2,"fret":1,"label":"R"}]}'>
+            </div>
+            <p>
+              <small
+                >String 5 / fret 3 = C (root); string 4 / fret 2 = E (3rd); string 3
+                open = G (5th); string 2 / fret 1 = C (root again); string 1 open =
+                E (3rd again). Low E (string 6) is muted because its open E would
+                put the 3rd in the bass. Five strings, three chord tones.</small
+              >
+            </p>
+          </div>
+          <div class="instrument">
+            <h4>Reading the labels</h4>
+            <p>
+              From now on we label every dot with its <strong>function</strong> —
+              R for root, 3 for the third, 5 for the fifth, b7 for a minor
+              seventh — not the letter name. That is the whole trick: a shape that
+              you understand as &ldquo;R on string 5, 3 on string 4, 5 on string 3&rdquo;
+              is the <em>same shape for every chord</em>; slide it and the
+              functions travel with it. Letter names change, the geometry doesn't.
+            </p>
+            <div class="callout why">
+              <span class="callout-label">Why guitarists double notes</span>
+              <p>
+                A triad has only three notes but the guitar offers six strings. To
+                make a chord ring full you double tones — usually the root and the
+                fifth, the two most stable, least colour-bearing members. The third
+                is the colour (major vs. minor), so it is doubled more sparingly.
+                Doubling never adds a <em>new</em> chord tone; it just thickens the
+                ones you have.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="lesson-prose">
+          <h2>2. Triads as three-string shapes</h2>
+          <p>
+            The fastest way to <em>see</em> root&ndash;3&ndash;5 is to strip the
+            chord down to exactly three strings — one note per string, no
+            doubling. These compact triad shapes live on each set of three
+            adjacent strings (1&ndash;2&ndash;3, 2&ndash;3&ndash;4, 3&ndash;4&ndash;5,
+            4&ndash;5&ndash;6) and they are the cleanest map of the theory you'll
+            find on the neck.
+          </p>
+          <p>
+            Here is C major on the top three strings, in
+            <strong>root position</strong> — the root is the lowest of the three:
+          </p>
+        </div>
+
+        <div class="both-instruments">
+          <div class="instrument">
+            <h4>C major triad, top three strings</h4>
+            <div class="diagram"
+              data-fretboard='{"frets":[3,6],"dots":[{"string":3,"fret":5,"label":"R"},{"string":2,"fret":5,"label":"3"},{"string":1,"fret":3,"label":"5"}]}'>
+            </div>
+            <p>
+              <small
+                >String 3 / fret 5 = C (root); string 2 / fret 5 = E (3rd); string 1
+                / fret 3 = G (5th). Three strings, three notes, exactly the C-E-G of
+                the staff above — no doubling to hide the structure.</small
+              >
+            </p>
+          </div>
+          <div class="instrument">
+            <h4>What an inversion does here</h4>
+            <p>
+              An <strong>inversion</strong> (Theory Lesson 10) just changes which
+              chord tone is lowest. On a three-string set the three inversions are
+              three different shapes stacked up the neck, all spelling C-E-G:
+            </p>
+            <ul>
+              <li><strong>Root position</strong> — R on the lowest string (the shape above).</li>
+              <li><strong>1st inversion</strong> — 3rd on the lowest string.</li>
+              <li><strong>2nd inversion</strong> — 5th on the lowest string.</li>
+            </ul>
+            <p>
+              Same three notes, reordered. The staff shows the three inversions as
+              the root, then the third, then the fifth taking the bottom voice:
+            </p>
+          </div>
+        </div>
+
+        <figure class="score">
+          <script type="text/abc">
+X:1
+T:C major triad — root position and two inversions
+M:3/4
+L:1/4
+K:C
+"root pos."[CEG] "1st inv."[EGc] "2nd inv."[Gce] |]
+          </script>
+          <figcaption>
+            The same C-E-G three ways: root in the bass, then the 3rd (E), then the
+            5th (G). Each maps to a different three-string shape on the guitar.
+          </figcaption>
+        </figure>
+
+        <div class="lesson-prose">
+          <div class="callout tip">
+            <span class="callout-label">Targets, not shapes</span>
+            <p>
+              The point of three-string triads is not to memorise more grids — it
+              is to stop thinking in grids at all. If you know that the 3rd of C is
+              E and you know where every E sits, you can build a C triad
+              <em>anywhere</em> by aiming at its tones. The shape is just the
+              by-product of three targets landing on three strings.
+            </p>
+          </div>
+        </div>
+
+        <div class="lesson-prose">
+          <h2>3. Seventh chords: add one more third</h2>
+          <p>
+            A seventh chord is a triad with a fourth note a seventh above the root
+            (Theory Lesson 11). On the guitar you almost never need a sixth string
+            for that extra note — you <em>convert</em> a tone you're already
+            fretting, or free up a string, so the shape barely moves. The most
+            efficient example is the movable <strong>E-shape</strong>.
+          </p>
+          <p>
+            Take an E-shape barre major chord and lower the doubled root on the
+            fourth string by two frets: it becomes the
+            <strong>minor seventh (b7)</strong>, and the whole grip is now a
+            dominant-7th barre chord. Here it is rooted at the first fret — an
+            <strong>F7</strong> (F&ndash;A&ndash;C&ndash;E&flat;):
+          </p>
+        </div>
+
+        <div class="both-instruments">
+          <div class="instrument">
+            <h4>F7 — the E-shape dominant 7th</h4>
+            <div class="diagram"
+              data-fretboard='{"frets":[0,3],"dots":[{"string":6,"fret":1,"label":"R"},{"string":5,"fret":3,"label":"5"},{"string":4,"fret":1,"label":"b7"},{"string":3,"fret":2,"label":"3"},{"string":2,"fret":1,"label":"5"},{"string":1,"fret":1,"label":"R"}]}'>
+            </div>
+            <p>
+              <small
+                >String 6 / fret 1 = F (root); string 5 / fret 3 = C (5th); string 4
+                / fret 1 = E&flat; (the b7 — this is the one note that turns the
+                major barre into a dom7); string 3 / fret 2 = A (3rd); string 2 /
+                fret 1 = C (5th); string 1 / fret 1 = F (root). Barre fret 1, and
+                slide the whole thing to play any dominant 7th.</small
+              >
+            </p>
+          </div>
+          <div class="instrument">
+            <h4>Three sevenths, one shape</h4>
+            <p>
+              The same barre frame gives you all three common sevenths by moving
+              one or two tones a single fret each — the chord tones are right under
+              your fingers:
+            </p>
+            <table>
+              <thead>
+                <tr><th>Chord</th><th>Tones</th><th>From the major barre…</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Dominant 7 (7)</td><td>R 3 5 b7</td><td>lower the doubled root to b7</td></tr>
+                <tr><td>Major 7 (maj7)</td><td>R 3 5 7</td><td>lower that root only one fret (to the major 7th)</td></tr>
+                <tr><td>Minor 7 (m7)</td><td>R b3 5 b7</td><td>also lower the 3rd a fret to the b3</td></tr>
+              </tbody>
+            </table>
+            <p>
+              The <strong>A-shape</strong> works the same way but roots on string 5
+              instead of string 6 — handy for getting a different range out of the
+              same chord. CAGED (Lesson 3) is what lets you pick which root string,
+              and therefore which voicing, you want.
+            </p>
+          </div>
+        </div>
+
+        <figure class="score">
+          <script type="text/abc">
+X:1
+T:F7 — the four chord tones
+M:4/4
+L:1/4
+K:C
+"R"F, "3"A, "5"C "b7"_E | "F7"[F,A,C_E]4 |]
+          </script>
+          <figcaption>
+            F7 spelled out: root F, major 3rd A, perfect 5th C, minor 7th
+            E&flat; — then stacked. The E&flat; is the b7 you fret on string 4.
+          </figcaption>
+        </figure>
+
+        <div class="lesson-prose">
+          <h2>4. Extensions: keep stacking thirds</h2>
+          <p>
+            A <strong>ninth</strong> chord carries the stack one third further —
+            R&ndash;3&ndash;5&ndash;b7&ndash;9 (the 9th is the same letter as the
+            2nd, an octave up; Theory Lesson 5 covered compound intervals,
+            Lesson 21 the extended chords). On the guitar you rarely play all five
+            notes; you swap a doubled or less-essential tone for the extension.
+            That is the everyday move:
+          </p>
+          <ul>
+            <li>
+              Take the F7 above and raise a doubled root a whole step (F&nbsp;&rarr;&nbsp;G)
+              to land on the <strong>9th</strong> — now it's an F9 colour, with no
+              new fingering vocabulary, just one tone re-aimed.
+            </li>
+            <li>
+              The 5th is the most expendable tone in a dominant chord — drop or
+              alter it freely to make room for the 7th, 9th, or a b5/#5
+              alteration. The 3rd and 7th are the <em>guide tones</em> that define
+              the chord's quality, so they stay.
+            </li>
+          </ul>
+          <div class="callout why">
+            <span class="callout-label">Why the 3rd and 7th are sacred</span>
+            <p>
+              The third tells you major or minor; the seventh tells you major-7,
+              dominant, or (with a lowered third) minor-7. Together they are the
+              chord's identity — in a dominant seventh they even form the internal
+              tritone that drives the chord home (Theory Lesson 11). The root is
+              often supplied by the bass and the fifth adds little colour, so when
+              strings run out, those are the two you sacrifice. Jazz guitarists
+              voice whole progressions on just the 3rd and 7th for exactly this
+              reason.
+            </p>
+          </div>
+        </div>
+
+        <div class="lesson-prose">
+          <h2>5. One symbol, many voicings</h2>
+          <p>
+            A lead sheet writes <strong>C</strong>, or <strong>Cmaj7</strong>, or
+            <strong>G7</strong> — a single symbol that names a <em>set of notes</em>,
+            not a fingering. Theory fixes the notes; the guitar offers a dozen
+            legal ways to lay them out. The open C chord, the C triad on the top
+            three strings, an A-shape C barre at the third fret, a C on the middle
+            strings — all of them are spelled C-E-G, so all of them are
+            &ldquo;C.&rdquo; The symbol underdetermines the shape <em>on purpose</em>.
+          </p>
+          <p>To go from symbol to shape, read it in two halves:</p>
+          <table>
+            <thead>
+              <tr><th>Symbol part</th><th>Tells you</th><th>On the neck</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Letter (root)</td><td>which note is the root</td><td>pick the root string &amp; fret (use CAGED)</td></tr>
+              <tr><td>Quality (m, maj7, 7, dim…)</td><td>which 3rd / 5th / 7th to use</td><td>choose the matching shape (major, m7, dom7…)</td></tr>
+            </tbody>
+          </table>
+          <p>
+            So <strong>G7</strong> = root G + dominant-7th quality → put an
+            E-shape dom7 root on the G of string 6 (fret 3), or an A-shape dom7 on
+            the G of string 5 (fret 10), or the open G7 grip. Choose by range,
+            voice-leading, and what your fingers can reach — the theory is
+            satisfied by any of them.
+          </p>
+          <div class="callout tip">
+            <span class="callout-label">The practical payoff</span>
+            <p>
+              When a chart throws a chord you've &ldquo;never played,&rdquo; you don't
+              need to look it up. Read the symbol → know the tones (R, 3, 5, and
+              maybe 7/9) → find those tones on a string set you can reach. Chord
+              construction on the guitar is just this loop, run fast.
+            </p>
+          </div>
+        </div>
+
+        <section class="exercise" aria-label="Exercises">
+          <h4>Exercises — tick them off as you do them</h4>
+          <label>
+            <input type="checkbox" class="check" data-lesson="06-chord-construction-on-guitar" data-ex="ex1" />
+            <span
+              >Play the open C chord and name each sounding string's function out
+              loud (R, 3, 5, R, 3). Then mute the third (string 4, fret 2) and
+              confirm the chord still sounds like C — the root and fifth carry it.</span
+            >
+          </label>
+          <label>
+            <input type="checkbox" class="check" data-lesson="06-chord-construction-on-guitar" data-ex="ex2" />
+            <span
+              >Play the three-string C triad (strings 1&ndash;3, frets 5&ndash;5&ndash;3),
+              then build its 1st and 2nd inversions further up the same strings.
+              Say which tone is lowest in each.</span
+            >
+          </label>
+          <label>
+            <input type="checkbox" class="check" data-lesson="06-chord-construction-on-guitar" data-ex="ex3" />
+            <span
+              >From the F7 E-shape, find the b7 (string 4, fret 1). Raise it one
+              fret to make Fmaj7, then lower the 3rd (string 3) a fret as well to
+              make Fm7. Name the tones of each before you strum.</span
+            >
+          </label>
+          <label>
+            <input type="checkbox" class="check" data-lesson="06-chord-construction-on-guitar" data-ex="ex4" />
+            <span
+              >Slide the whole F7 shape up two frets to G7, then to A7. Confirm by
+              naming the root on string 6 each time (G at fret 3, A at fret 5).</span
+            >
+          </label>
+          <label>
+            <input type="checkbox" class="check" data-lesson="06-chord-construction-on-guitar" data-ex="ex5" />
+            <span
+              >Take any lead-sheet symbol you don't have memorised (try Bbmaj7 or
+              D9). Read root + quality, list the tones, and find a playable shape
+              for it on a string set you can reach. No chord book.</span
+            >
+          </label>
+
+          <div class="lesson-complete-row">
+            <label>
+              <input
+                type="checkbox"
+                class="check lesson-complete"
+                data-lesson="06-chord-construction-on-guitar"
+                data-lesson-complete
+              />
+              <span>Mark this lesson complete</span>
+            </label>
+          </div>
+        </section>
+
+        <div class="lesson-prose">
+          <h2>Keep going — verified resources</h2>
+          <p>
+            A short, hand-checked set for applying chord theory to the neck. The
+            video needs an internet connection; the notation and diagrams above
+            work offline.
+          </p>
+        </div>
+
+        <div class="video-embed">
+          <iframe
+            src="https://www.youtube.com/embed/65s8eIkfwNg"
+            title="The CAGED System for Guitar — Unlock the Entire Fretboard"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <ul class="resources">
+          <li>
+            <span class="chip article">Article</span>
+            <a href="https://viva.pressbooks.pub/openmusictheory/chapter/triads/" target="_blank" rel="noopener"
+              >Open Music Theory — Triads</a
+            >
+            <span>The construction this lesson applies: root, 3rd, 5th and the four qualities.</span>
+          </li>
+          <li>
+            <span class="chip article">Article</span>
+            <a href="https://viva.pressbooks.pub/openmusictheory/chapter/seventh-chords/" target="_blank" rel="noopener"
+              >Open Music Theory — Seventh chords</a
+            >
+            <span>Triad-plus-a-seventh: the dominant, major and minor seventh types.</span>
+          </li>
+          <li>
+            <span class="chip article">Article</span>
+            <a href="https://appliedguitartheory.com/lessons/major-triads-guitar/" target="_blank" rel="noopener"
+              >Applied Guitar Theory — Major triads on guitar</a
+            >
+            <span>Three-string triad shapes on every string set, with all three inversions.</span>
+          </li>
+          <li>
+            <span class="chip article">Article</span>
+            <a href="https://appliedguitartheory.com/lessons/movable-chord-shapes/" target="_blank" rel="noopener"
+              >Applied Guitar Theory — Movable chord shapes</a
+            >
+            <span>How the open E and A shapes become movable barre chords (incl. 7th forms).</span>
+          </li>
+          <li>
+            <span class="chip article">Article</span>
+            <a href="https://www.guitar-chord.org/7.html" target="_blank" rel="noopener"
+              >Guitar-Chord.org — Dominant 7th chords (1&ndash;3&ndash;5&ndash;b7)</a
+            >
+            <span>Dom7 voicings in every key with the chord-tone formula spelled out.</span>
+          </li>
+          <li>
+            <span class="chip article">Article</span>
+            <a href="https://weissguitar.com/guitar-triads/" target="_blank" rel="noopener"
+              >Weiss Guitar — Guitar triads as harmonic targets</a
+            >
+            <span>The &ldquo;targets, not shapes&rdquo; approach to building triads anywhere.</span>
+          </li>
+          <li>
+            <span class="chip video">Video</span>
+            <a href="https://www.youtube.com/watch?v=65s8eIkfwNg" target="_blank" rel="noopener"
+              >The CAGED System for Guitar — Unlock the Entire Fretboard</a
+            >
+            <span>Locating roots and chord shapes across the neck (embedded above).</span>
+          </li>
+        </ul>
+
+        <nav class="lesson-nav" aria-label="Lesson navigation">
+          <a class="nav-prev" href="05-technique-pima-picking.html">← 05 · Technique: PIMA picking</a>
+          <a class="nav-hub" href="../../index.html">All lessons</a>
+          <span class="nav-next nav-disabled">End of the Guitar track — keep going on Piano &amp; Repertoire →</span>
+        </nav>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>
+          Musicianship — a framework-free, offline-friendly music-learning suite.
+          Notation rendered with the vendored abcjs library. Theory in this lesson
+          is cross-checked against Open Music Theory, Wikipedia, and established
+          guitar-theory references.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Shared scripts, fixed load order (plain scripts, not modules) -->
+    <script src="../../assets/vendor/abcjs/abcjs-basic-min.js"></script>
+    <script src="../../assets/js/notation.js"></script>
+    <script src="../../assets/js/fretboard.js"></script>
+    <script src="../../assets/js/keyboard.js"></script>
+    <script src="../../assets/js/progress.js"></script>
+  </body>
+</html>

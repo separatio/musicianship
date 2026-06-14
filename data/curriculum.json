@@ -256,7 +256,7 @@
           "n": 1,
           "title": "Mapping the Fretboard",
           "file": "lessons/guitar/01-fretboard-map.html",
-          "status": "planned",
+          "status": "published",
           "summary": "Finding every note on the neck and seeing octave and string patterns.",
           "prereqs": ["theory/01-pitch-chromatic"]
         },
@@ -265,7 +265,7 @@
           "n": 2,
           "title": "Reading Music on Guitar",
           "file": "lessons/guitar/02-reading-on-guitar.html",
-          "status": "planned",
+          "status": "published",
           "summary": "Connecting standard notation to fret positions in first position and beyond.",
           "prereqs": ["theory/02-notation-clefs", "01-fretboard-map"]
         },
@@ -274,7 +274,7 @@
           "n": 3,
           "title": "The CAGED System",
           "file": "lessons/guitar/03-caged-system.html",
-          "status": "planned",
+          "status": "published",
           "summary": "Five movable chord and scale shapes that cover the whole neck.",
           "prereqs": ["01-fretboard-map", "theory/10-triads"]
         },
@@ -283,7 +283,7 @@
           "n": 4,
           "title": "Connecting Scale Positions",
           "file": "lessons/guitar/04-connecting-scale-positions.html",
-          "status": "planned",
+          "status": "published",
           "summary": "Linking scale shapes across positions to play freely up the neck.",
           "prereqs": [
             "03-caged-system",
@@ -295,7 +295,7 @@
           "n": 5,
           "title": "Technique: PIMA & Picking",
           "file": "lessons/guitar/05-technique-pima-picking.html",
-          "status": "planned",
+          "status": "published",
           "summary": "Right-hand fingerstyle (PIMA) and pick technique fundamentals.",
           "prereqs": ["02-reading-on-guitar"]
         },
@@ -304,7 +304,7 @@
           "n": 6,
           "title": "Chord Construction on Guitar",
           "file": "lessons/guitar/06-chord-construction-on-guitar.html",
-          "status": "planned",
+          "status": "published",
           "summary": "Building and voicing chords on the neck from their theory formulas.",
           "prereqs": ["03-caged-system", "theory/11-seventh-chords"]
         }
