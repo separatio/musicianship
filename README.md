@@ -60,6 +60,25 @@ assets/
 lessons/<track>/        Lesson pages, e.g. lessons/theory/05-intervals.html.
 ```
 
+## Development
+
+Two scripts keep lessons correct. The validator checks every ABC score and
+diagram for the silent-rendering bugs abcjs and the SVG engines won't warn
+about — over- or underfull bars, fretboard dots mislabeled against standard
+tuning, keyboard highlights outside the rendered range, and empty score cards:
+
+```sh
+bun scripts/validate-lessons.mjs                          # all lessons + index.html
+bun scripts/validate-lessons.mjs lessons/theory/05-intervals.html
+```
+
+Enable the pre-commit gate once per clone — it runs Biome and the validator on
+staged lessons so a bad bar or mislabeled fret can't be committed:
+
+```sh
+bash scripts/setup-hooks.sh
+```
+
 ## License
 
 MIT — see [LICENSE](LICENSE).

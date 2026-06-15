@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+# Framework-free pre-commit gate (no husky / node_modules — see CLAUDE.md).
+# 1. Biome check on staged files.
+# 2. Lesson validator on staged lesson HTML (skipped when none are staged).
+# Enable once per clone with: bash scripts/setup-hooks.sh
+set -euo pipefail
+
+cd "$(git rev-parse --show-toplevel)"
+
+# Staged files that still exist (Added / Copied / Modified).
+mapfile -t staged < <(git diff --cached --name-only --diff-filter=ACM)
+if [ ${#staged[@]} -eq 0 ]; then
+  exit 0
+fi
+
+echo "pre-commit: biome check…"
+bunx @biomejs/biome check "${staged[@]}"
+
+# Validate only staged lesson pages + the hub.
+lessons=()
+for f in "${staged[@]}"; do
+  case "$f" in
+    lessons/*.html | index.html) lessons+=("$f") ;;
+  esac
+done
+
+if [ ${#lessons[@]} -gt 0 ]; then
+  echo "pre-commit: validating ${#lessons[@]} lesson page(s)…"
+  bun scripts/validate-lessons.mjs "${lessons[@]}"
+fi
+
+echo "pre-commit: ok"
