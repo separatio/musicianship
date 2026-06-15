@@ -61,6 +61,31 @@ prose in `.lesson-prose`, `.callout` (+ `.callout.why`, `.callout.tip`),
 `.resources` (with `.chip.article/.video/.trainer`), `.lesson-nav`
 (prev | hub | next).
 
+## Authoring gotchas (these caused real errors — check every one)
+
+**ABC notation** (inside `<script type="text/abc">`):
+- Octave register: bare uppercase `C` = C4 (middle C); `C,` = C3, `C,,` = C2;
+  lowercase `c` = C5, `c'` = C6. Chords sound together as `[CEG]`. Spell every
+  score in the octave its caption claims.
+- Bar math: each bar's durations must sum to the meter, and **abcjs does not
+  warn on over/underfull bars**. Under `L:1/4` a 4/4 bar needs 4 quarter-units
+  (whole note = `C4`); under `L:1/2` a 4/4 bar holds only 2 units (whole note =
+  `C2`, NOT `C4`). Re-check each bar after writing.
+- The key signature alters bare notes: under `K:Em` a bare `F` sounds F#.
+- Grand staff: group two staves with `%%score { (S A) (T B) }` (braces) +
+  `V:n clef=treble|bass`; confirm it renders TWO staves, not one.
+
+**Diagram JSON** (`data-fretboard` / `data-keyboard`):
+- Fretboard: string 1 = high E, string 6 = low E. Compute each dot's pitch from
+  standard tuning (low→high `E A D G B E`) and confirm it matches the label.
+- Keyboard: `"octaves":1` from C4 renders only C4–B4 (no C5) — every `highlight`
+  note must fall in the rendered range. Spell sharps as `"G#5"`; `"Gb5"` lands on
+  the black key one step lower.
+
+**Cross-track links:** from `lessons/<track>/`, assets = `../../assets/...`,
+hub = `../../index.html`, a theory lesson = `../theory/NN-slug.html`, a sibling
+lesson = `NN-slug.html`.
+
 ## Verification protocol (authoring)
 
 - Every theory claim backed by **≥2 authoritative sources**.
