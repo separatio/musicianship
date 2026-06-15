@@ -14,6 +14,10 @@ only.
 - **Do not** lint/format `assets/vendor/` (vendored abcjs) — it is excluded in
   `biome.json`.
 - **Worktrees:** all work happens in a `.worktrees/<branch>` worktree.
+- **Authoring checks:** the *Authoring gotchas* below are now enforced by
+  `bun scripts/validate-lessons.mjs` (ABC bar math, octave/range, fretboard
+  labels, empty scores). A framework-free pre-commit hook in `.githooks/` runs
+  it on staged lessons — enable once per clone with `bash scripts/setup-hooks.sh`.
 
 ## The `MUS.*` JavaScript contract
 
