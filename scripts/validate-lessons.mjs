@@ -63,14 +63,20 @@ function checkAbc(html, file, fail) {
   for (const m of html.matchAll(re)) {
     idx++
     const abc = m[1].trim()
-    const where = `${file} abc#${idx}`
-    const tune = ABCJS.parseOnly(abc)[0]
-    if (!tune) {
-      fail(`${where}: abcjs produced no tune`)
+    // One <script> block can hold several tunes (multiple X: headers); check all.
+    const tunes = ABCJS.parseOnly(abc)
+    if (!tunes.length) {
+      fail(`${file} abc#${idx}: abcjs produced no tune`)
       continue
     }
-    for (const w of tune.warnings || []) fail(`${where}: abcjs warning: ${w}`)
-    checkBars(tune, where, fail)
+    tunes.forEach((tune, ti) => {
+      const where =
+        tunes.length > 1
+          ? `${file} abc#${idx} tune#${ti + 1}`
+          : `${file} abc#${idx}`
+      for (const w of tune.warnings || []) fail(`${where}: abcjs warning: ${w}`)
+      checkBars(tune, where, fail)
+    })
   }
 }
 
@@ -102,6 +108,12 @@ function checkBars(tune, where, fail) {
         for (const el of voice) {
           if (el.el_type === 'bar') {
             bars.push({ sum: 0, count: 0 })
+          } else if (el.rest?.type === 'multimeasure') {
+            // A multi-measure rest (Zn) is one element spanning whole bars; it
+            // fills its bar by definition, so count it as exactly full.
+            const cur = bars[bars.length - 1]
+            cur.sum = barLen
+            cur.count++
           } else if (el.el_type === 'note' && typeof el.duration === 'number') {
             if (el.startTriplet) tupletMult = el.tripletMultiplier ?? 1
             const cur = bars[bars.length - 1]
@@ -174,6 +186,12 @@ function checkFretboards(html, file, fail) {
       }
       const label = String(d.label ?? '').trim()
       if (!/^[A-G][#b]?$/.test(label)) continue // only note-name labels are checkable
+      if (typeof d.fret !== 'number') {
+        fail(
+          `${file} fretboard#${idx}: dot labeled "${label}" has non-numeric fret ${JSON.stringify(d.fret)}`,
+        )
+        continue
+      }
       const open = OPEN[d.string]
       if (open == null) {
         fail(`${file} fretboard#${idx}: invalid string ${d.string}`)
